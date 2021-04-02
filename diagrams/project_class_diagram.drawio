@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2021-04-02T13:46:57.611Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="6KR7S2wnwDM986bI1bVr" version="14.4.9" type="device"><diagram id="fPTG1AizfmxHgHSCyzeI" name="Page-1">7Vprb+I4FP01SLsfZpQQnh8L7TwkOtMduprOJ2SSS/DixMgxr/n1c+3YTYKB0lEjdiQkpOaeaxvnnuPLIbQRDJPtR0GW83seAWs0vWjbCG4bzabfanbwj0J2OdINujkQCxqZQQUwpj/BgJ5BVzSCrDJQcs4kXVbBkKcphLKCESH4pjpsxln1XZckBgcYh4S56HcayXmO9prdAv8ENJ7bd/Y7/TyTEDvY3Ek2JxHflKDgrhEMBecyv0q2Q2CqeLYu+bwPR7LPGxOQynMmJIMfo8Vmuci8qPf0/YaRz//8+86ssiZsZW74HpIpCLNlubN1yDY0YSTFaDDjqRybjI8xYTRO8TrEjeDMYLAGISmW8MYkJF8iGs4pi0Zkx1dqu5kk4cJGgzkX9CcuS5hZE9NCGjWghMojxmomwh6iAjIc82Br4O9B92RbGTgimTRAyBkjy4xOn28jISKm6YBLyRMzaEYZG3LGha5BAH7Uhq7eneALKGX6/SD4gIUfuKTYCmNNYFuCDEkfgScgxQ6HmGzL6MUcmI4JN4X6fIvNS8pregYkRvHx88qFKPDC6OIVGmk6Gkm0RiY4q+l9/vLYUIc88POKiUxOUpIApsaP30opRo5lzHJyt3RzKAS5yiy8J0qsqHToSHmu0hJ3BrJCZTCTR2WaLUlI03ikx9y2CuSbqbWCOM6dMX2a5zSKIFUS47hVkutJ7XzJaSo1F+0BvpCdofe+3WjjxocY+0WMLzVcyCFP8V4I1doBrNcGlGAPqOrkYX5ZakZbtjm/pK1eqyZpBY60HI4Z1dzlHNsW7P8WwQlSxaBg9FERfvvOd1gPXNaDAwwzMgX2wDMqKVfri3zsHvOXItf3z+wcvZrIbTnkrilsJoSxSX7is7/+Lp10EkUGr8B6zgEcIipL+LUzvLF4emeKp1mTetqOegacL7Da2dWbXMybBHbKa82JX5c56TgymeYyOeROjvuWEN1JdihBpIQ0ApUYfP06urv5cu01p3tN+2xR/V9cSPfqQmoj9+IupHfchZhO4doQk3B9yKFEBAwkHExpj1JKXBvHG2vrTJPSr8uk9B1xDdUHydWhXMyhdLzq45N2cKZD6dXlUGwDLInkqNvIE5JK5j4JyXMRZKGgS93r90eQKWVU7iYM1vop7MH5RB5bWtIDz2ailSDmzapbZTwkB3cRcpSJc2NEdSG5cxJUtYxVKFEL+wtd++Xpftk/+2y80mj5nbqclu8+b75arbei1+9f2Gr57pPiZ6+lWwy4VkvjrtFyYe2lXNi4LzdxbSR1Ku3ST4es8yuRClEM1lhhTeY85ilhdwWKlV7pr/J5nYsxI677gmoL/4GUO+OcyEpy5Z1kYn0VbKl8Kl3/UEshF3l0a+2SDnY2SPF+n8pBaZYKi2k6svN+wyVlfCVCOFE1wwa6wxhOCcJ8TqiKnpSDAIYeYF39qfTtue7/eVy/97xOle9mv/8C4zp6AIE2TH8TqE0GnTNlYJ1r7TrAsPgdXOdK/00Q3P0C</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-02T23:29:08.118Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="-XrS72EDmz25hbDsqx-4" version="14.4.9" type="github">
+  <diagram id="fPTG1AizfmxHgHSCyzeI" name="Page-1">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-1" value="MEMBER" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9933FF;" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-2" value="member_id INT&#xa;first_name STR&#xa;last_name STR&#xa;member_type STR&#xa;status STR" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-1" vertex="1">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-1" vertex="1">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-4" value="view_all_members()&#xa;add_member()&#xa;view_member()&#xa;edit_member()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-1" vertex="1">
+          <mxGeometry y="118" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-5" value="BOOKING" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9933FF;" parent="1" vertex="1">
+          <mxGeometry x="321" y="60" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-6" value="booking_id INT&#xa;member_id INT&#xa;class_id INT&#xa;attended BOOLEAN" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-5" vertex="1">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-5" vertex="1">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-8" value="view_all_bookings()&#xa;add_booking()&#xa;view_booking()&#xa;delete_booking()&#xa;edit_booking()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-5" vertex="1">
+          <mxGeometry y="118" width="160" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-9" value="SESSION" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#e1d5e7;strokeColor=#9933FF;" parent="1" vertex="1">
+          <mxGeometry x="600" y="53" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-10" value="class_id INT&#xa;class_title STR&#xa;class_description STR&#xa;ability_level STR&#xa;class_date STR&#xa;class_time STR&#xa;duration INT&#xa;location STR&#xa;cost INT&#xa;capacity INT&#xa;instructor STR&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-9" vertex="1">
+          <mxGeometry y="26" width="160" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-9" vertex="1">
+          <mxGeometry y="190" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-12" value="view_all_classes()&#xa;add_class()&#xa;view_class()&#xa;edit_class()&#xa;delete_class()&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="mBYLkwpks0d8XWAlaIQU-9" vertex="1">
+          <mxGeometry y="198" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9933FF;" parent="1" source="mBYLkwpks0d8XWAlaIQU-2" target="mBYLkwpks0d8XWAlaIQU-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mBYLkwpks0d8XWAlaIQU-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.006;entryY=0.299;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#9933FF;" parent="1" source="mBYLkwpks0d8XWAlaIQU-6" target="mBYLkwpks0d8XWAlaIQU-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
