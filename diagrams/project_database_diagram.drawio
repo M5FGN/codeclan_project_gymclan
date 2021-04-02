@@ -1,1 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2021-04-02T13:49:35.174Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="cNu7MlB_5LEufcb7fRTR" version="14.4.9" type="device"><diagram id="cUhFRVL-xcHtPhrZ-8ej" name="Page-1">7Vhbc6IwFP41PnYGiHh5BEut06pd7N6eOhFSzGwgTIhV99fvAYKCiFVbHzqzL5qcfDk5OZcvR1toEK6HAseLMfcJaxmav26h25Zh6G2jA1+pZJNLuqibCwJBfQXaCWb0L1FCTUmX1CdJBSg5Z5LGVaHHo4h4siLDQvBVFfbKWfXUGAekJph5mNWlP6kvF7m0Z3R38ntCg0Vxst7p5yshLsDqJskC+3xVEiGnhQaCc5mPwvWAsNR5hV/yfXcNq1vDBInkKRumi948HJs97T6Iv69XPvJvvt0oLW+YLdWFx87YdtyZslluCkckKxoyHMHMfqWMDTjjIltBRPdN0gV5IgX/Q0or/T5Cd2CPXbe1OJgISdYlkbJ9SHhIpNgAZF1NCJVHuony+WoXla2rF+WIaCpUWGVCsFW9cxYMlL/O8F275juAG9rMcUfWIwye3NHYcn/D6MGBzw4Di+y5gFEgMy+KRL5EOCSA+GG5g3vLraMYPgEUknBOxIvcxEdhicRymZQRezGGUKS4hQzBEbc6DDGjQQRjDwJHIKp2GjAK5WGphZD6frrdFiShf/E8U6XBPOY0kpnLTbtl3qa6lpIneYHrB3PiaIaenCgF46hEMdq1PNE7B/Kkp10pTYxamtT8TnzgHDUFb1C5cQnDkvLI2a3YrzySiiB1oxomEvlWSnYwddwQR5tjNZeedtSRZVdpB0tKCUVm5VuVKg85UJ3xlOZEKVKoWtOG1q6qSPhSeETtKlPbniKkmccVSSwCImuKsnhuL355iHu1ENvT6cNoMvxkGoUCFkUKGOhzeHXfd2cQ65GAf6hi+h8jVsWG2Z67qeuMhpMmqAf0mpyExFJCkZEUCbF9dKzJl2DP3rnpYFSzoajQ99izcy32LJ79UjIMHq3ZzPkCpdXRLuxZjKv1LHq94TurtvKCgReKHe00chg07p6gcfqOAfjZ+fV8oK7mlMF798LIW/bL4R2V77U46mAsU9TsuVkPDRsR/lJgZfNocsBkxr1ivdkOnsim/R6OsQd3blqnEaTp0pOQo8rCL0A02zq9tE9DxmlMo3evRjX/O7WmTs009hssdFmntk+JNUUXd2ow3f2WzuG7fySQ8w8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-02T23:26:48.086Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36" etag="XSql-Mgflxjio7w3vIK9" version="14.4.9" type="github">
+  <diagram id="cUhFRVL-xcHtPhrZ-8ej" name="Page-1">
+    <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-1" value="MEMBERS" style="swimlane;fillColor=#e1d5e7;strokeColor=#9933FF;" parent="1" vertex="1">
+          <mxGeometry x="10" y="153" width="220" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-4" value="id SERIAL PRIMARY KEY&lt;br&gt;first_name VARCHAR&lt;br&gt;last_name VARCHAR&lt;br&gt;member_type VARCHAR&lt;br&gt;status VARCHAR" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="Oh8bmM580HgpUxwd3d-Q-1" vertex="1">
+          <mxGeometry x="26" y="24" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-2" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="230" y="204" as="sourcePoint" />
+            <mxPoint x="305" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-8" value="BOOKINGS" style="swimlane;fillColor=#e1d5e7;strokeColor=#9933FF;startSize=23;" parent="1" vertex="1">
+          <mxGeometry x="305" y="153" width="220" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-9" value="id SERIAL PRIMARY KEY&lt;br&gt;member_id FOREIGN KEY&lt;br&gt;class_id FOREIGN KEY&lt;br&gt;attended BOOLEAN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="Oh8bmM580HgpUxwd3d-Q-8" vertex="1">
+          <mxGeometry x="25" y="30" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-10" value="SESSIONS" style="swimlane;fillColor=#e1d5e7;strokeColor=#9933FF;startSize=23;" parent="1" vertex="1">
+          <mxGeometry x="600" y="152" width="220" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-11" value="id SERIAL PRIMARY KEY&lt;br&gt;class_title VARCHAR&lt;br&gt;class_description TEXT&lt;br&gt;ability_level VARCHAR&lt;br&gt;class_type VARCHAR&lt;br&gt;class_date STR&lt;br&gt;class_time STR&lt;br&gt;duration INT&lt;br&gt;location VARCHAR&lt;br&gt;cost INT&lt;br&gt;capacity INT&lt;br&gt;instructor STR" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="Oh8bmM580HgpUxwd3d-Q-10" vertex="1">
+          <mxGeometry x="26" y="32" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Oh8bmM580HgpUxwd3d-Q-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" target="Oh8bmM580HgpUxwd3d-Q-8" source="Oh8bmM580HgpUxwd3d-Q-10">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="525" y="203" as="sourcePoint" />
+            <mxPoint x="580" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
