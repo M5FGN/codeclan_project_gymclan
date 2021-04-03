@@ -11,3 +11,10 @@ import repositories.booking_repository as booking_repository
 def delete_all():
     sql = 'DELETE FROM bookings'
     run_sql(sql)
+
+# def save(booking):
+#     sql = 'INSERT INTO bookings(member_id, gymsession_id, attended) VALUES (%s, %s, %s) RETURNING id'
+#     values = [booking.member.id, booking.gymsession.id, booking.attended]
+#     results = run_sql(sql, values)
+#     booking.id = results[0]['id']
+#     return booking
