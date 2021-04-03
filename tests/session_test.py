@@ -19,7 +19,7 @@ class TestSession(unittest.TestCase):
         self.assertEqual('Les Mills - Body Combat', self.session2.session_title)
         self.assertEqual('Les Mills - Body Balance', self.session3.session_title)
 
-    def test_session_has__session_description (self):
+    def test_session_has__session_description(self):
         self.assertEqual('A full body weights workout.', self.session1.session_description)
         self.assertEqual('High energy martial arts inspired workout.', self.session2.session_description)
         self.assertEqual('A Yoga based class that will improve your mind, your body and your life', self.session3.session_description)
