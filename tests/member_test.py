@@ -9,10 +9,10 @@ class TestMember(unittest.TestCase):
         self.member2 = Member('Bruce', 'Wayne', 'Premium', 'Inactive', 2)
         self.member3 = Member('Peter', 'Parker', 'Standard', 'Active', 3)
     
-    def test_member_has__member_id(self):
-        self.assertEqual(None, self.member1.member_id)
-        self.assertEqual(2, self.member2.member_id)
-        self.assertEqual(3, self.member3.member_id)
+    def test_member_has__id(self):
+        self.assertEqual(None, self.member1.id)
+        self.assertEqual(2, self.member2.id)
+        self.assertEqual(3, self.member3.id)
     
     def test_member_has__first_name(self):
         self.assertEqual('Diana', self.member1.first_name)
@@ -29,8 +29,8 @@ class TestMember(unittest.TestCase):
         self.assertEqual('Premium', self.member2.member_type)
         self.assertEqual('Standard', self.member3.member_type)
 
-    def test_member_has__status(self):
-        self.assertEqual('Active', self.member1.status)
-        self.assertEqual('Inactive', self.member2.status)
-        self.assertEqual('Active', self.member3.status)
+    def test_member_has__member_status(self):
+        self.assertEqual('Active', self.member1.member_status)
+        self.assertEqual('Inactive', self.member2.member_status)
+        self.assertEqual('Active', self.member3.member_status)
 
