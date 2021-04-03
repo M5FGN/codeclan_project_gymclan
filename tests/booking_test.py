@@ -4,6 +4,7 @@ from models.member import Member
 from models.session import Session
 from models.booking import Booking
 
+
 class TestBooking(unittest.TestCase):
 
     def setUp(self):
@@ -20,7 +21,6 @@ class TestBooking(unittest.TestCase):
         self.booking2 = Booking(self.member2.member_id, self.session1.session_id, True, 2)
         self.booking3 = Booking(self.member2.member_id, self.session3.session_id, True, 3)
 
-
     def test_booking_has__booking_id(self):
         self.assertEqual(None, self.booking1.booking_id)
         self.assertEqual(2, self.booking2.booking_id)
@@ -36,7 +36,12 @@ class TestBooking(unittest.TestCase):
         self.assertEqual(1, self.booking2.session_id)
         self.assertEqual(3, self.booking3.session_id)
 
-    def test_booking_has__attended(self):
+    def test_booking_has__attendance(self):
         self.assertEqual(False, self.booking1.attended)
         self.assertEqual(True, self.booking2.attended)
         self.assertEqual(True, self.booking3.attended)
+
+    def test_mark_class_as_attended(self):
+        self.booking1.add_attendance()
+        self.assertEqual(True, self.booking1.attended)
+
