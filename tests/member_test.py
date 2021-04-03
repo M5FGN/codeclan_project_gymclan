@@ -5,12 +5,12 @@ from models.member import Member
 class TestMember(unittest.TestCase):
 
     def setUp(self):
-        self.member1 = Member(1, 'Diana', 'Prince', 'Premium', 'Active')
-        self.member2 = Member(2, 'Bruce', 'Wayne', 'Premium', 'Inactive')
-        self.member3 = Member(3, 'Peter', 'Parker', 'Standard', 'Active')
+        self.member1 = Member('Diana', 'Prince', 'Premium', 'Active')
+        self.member2 = Member('Bruce', 'Wayne', 'Premium', 'Inactive', 2)
+        self.member3 = Member('Peter', 'Parker', 'Standard', 'Active', 3)
     
     def test_member_has__member_id(self):
-        self.assertEqual(1, self.member1.member_id)
+        self.assertEqual(None, self.member1.member_id)
         self.assertEqual(2, self.member2.member_id)
         self.assertEqual(3, self.member3.member_id)
     
