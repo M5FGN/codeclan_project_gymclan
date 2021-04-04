@@ -19,7 +19,7 @@ p {
     border: 2px solid #D72F78;
     border-radius: 5px;
     padding: 5px 10px;
-    width: 100px;
+    width: 200px;
     font-family: 'Antic Slab', serif;
     font-size: 18px;
     text-decoration: none;
@@ -56,6 +56,7 @@ header {
 
 .logo_icon {
     grid-area: logo_icon;
+    padding-left: 20px;
 }
 .gc_logo {
     font-family: 'Oswald', sans-serif;
@@ -74,22 +75,54 @@ header {
     font-weight: bolder;
 }
 
-nav > ul > li {
+header > nav > ul > li {
     display: inline;
     padding-right: 40px;
     font-size: 28px;
     color: white;
 }
 
-nav > ul > li > a {
+header > nav > ul > li > a {
     text-decoration: none;
     color: white;
 }
 
-nav > ul > li > a > i {
+header > nav > ul > li > a > i {
+    display: inline;
     padding-right: 10px;
     font-size: 20px;
     color: white;
+}
+
+main > nav > ul > li {
+    display: inline;
+    padding: 10px;
+    color: #D72F78;
+    font-size: 20px;
+}
+
+main > nav > ul > li > a {
+    text-decoration: none;
+}
+
+main > nav > ul > li > a :hover {
+    background-color: #D72F78;
+    color: white;
+}
+
+main > nav > ul > li > a > i, main > nav > ul > li > a > span > i  {
+    padding-right: 15px;
+    color: #D72F78;
+} 
+
+.fa-calendar-alt, .fa-calendar-plus, .fa-calendar, .fa-calendar-minus {
+    font-size: 24px;
+}
+
+#splash {
+    width: 100%;
+    border-radius: 5px;
+    opacity: 60%;
 }
 
 
@@ -104,4 +137,7 @@ footer > p {
     font-size: 18px;
     color: white;
     text-align: center;
+    font-family: 'Antic Slab', serif;
+    font-size: 16px;
 }
+
