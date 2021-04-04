@@ -1,3 +1,107 @@
 body {
-    background-color: pink;
+    background: linear-gradient(90deg, rgba(240,56,43,1) 8%, rgba(196,40,182,1) 81%);
+}
+
+h1 {    
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    color: silver;
+    margin-top: 0px;
+}
+
+p {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    border: 2px solid #D72F78;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 100px;
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: #D72F78;
+    color: white;
+}
+
+
+.fa-dumbbell {
+    font-size: 70px;
+    padding: 10px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#logo {
+    display: grid;
+    grid-template-columns: 0.2fr 1.6fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo_icon gc_logo"
+      "logo_icon gc_sublogo";
+}
+
+.logo_icon {
+    grid-area: logo_icon;
+}
+.gc_logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    color: white;
+    grid-area: gc_logo;
+    padding-top: 10px;
+}
+
+.gc_sublogo {
+    font-family: 'Antic Slab', serif;
+    font-size: 16px;
+    color: white;
+    grid-area: gc_sublogo;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+
+nav > ul > li {
+    display: inline;
+    padding-right: 40px;
+    font-size: 28px;
+    color: white;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > ul > li > a > i {
+    padding-right: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+
+main {
+    background-color: white;
+    margin: 0px 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer > p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
 }
