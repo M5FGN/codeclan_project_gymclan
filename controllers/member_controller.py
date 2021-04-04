@@ -7,4 +7,5 @@ members_blueprint = Blueprint('members', __name__)
 
 @members_blueprint.route('/members')
 def members():
-    return render_template('members/index.html', title='Members')
+    members = member_repository.view_all()
+    return render_template('members/index.html', title='Members', members=members)

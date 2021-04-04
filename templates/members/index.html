@@ -4,15 +4,33 @@
 
 <h1>Memebers</h1>
 
-<nav>
-    <ul>
-        <li><a class = 'button' href=""><i class="fas fa-users"></i>View All Members</a></li>
-        <li><a class = 'button' href=""><i class="fas fa-user-plus"></i>Add a Member</a></li>
-        <li><a class = 'button' href=""><i class="fas fa-user"></i>Edit a Member</a></li>
-        <li><a class = 'button' href=""><i class="fas fa-user-minus"></i>Delete a Member</a></li>
-    </ul>
-</nav>
 
+<section>
+    <hr>
+    <table class = 'results'>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Member Type</th>
+            <th>Member Status</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td>{{member.first_name}}</td><td>{{member.last_name}}</td><td>{{member.member_type}}</td><td>{{member.member_status}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    <hr>
+</section>
 
+    <nav>
+        <ul>
+            <li><a class = 'button' href=""><i class="fas fa-users"></i>View All Members</a></li>
+            <li><a class = 'button' href=""><i class="fas fa-user-plus"></i>Add a Member</a></li>
+            <li><a class = 'button' href=""><i class="fas fa-user"></i>Edit a Member</a></li>
+            <li><a class = 'button' href=""><i class="fas fa-user-minus"></i>Delete a Member</a></li>
+        </ul>
+    </nav>
 
 {% endblock content %}

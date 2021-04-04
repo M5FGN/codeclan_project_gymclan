@@ -18,3 +18,13 @@ def save(member):
     results = run_sql(sql, values)
     member.id = results[0]['id']
     return member
+
+def view_all():
+    members=[]
+
+    sql = 'SELECT * FROM members'
+    results = run_sql(sql)
+    for row in results:
+        member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'])
+        members.append(member)
+    return members
