@@ -2,6 +2,28 @@
 
 {% block content %}
 
+<h1>Sessions</h1>
+
+<section>
+    <hr>
+    <table class = 'results'>
+        <tr>
+            <th>Session Title</th>
+            <th>Session Type</th>
+            <th>Ability Level</th>
+            <th>Duration</th>
+            <th>Plan</th>
+        </tr>
+        {% for gymsession in gymsessions %}
+        <tr>
+            <td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_type}}</td><td>{{gymsession.ability_level}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_plan}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    <hr>
+</section>
+
 <nav>
     <ul>
         <li><a class = 'button' href=""><i class="far fa-calendar-alt"></i>View All Sessions</a></li>

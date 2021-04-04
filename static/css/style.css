@@ -154,6 +154,7 @@ ol > li {
     font-size: 18px;
     color: silver;
     padding: 10px 30px 10px 0px;
+    text-align: left;
 }
 
 .results > tbody > tr > td {

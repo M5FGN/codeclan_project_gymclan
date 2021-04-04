@@ -7,4 +7,6 @@ gymsessions_blueprint = Blueprint('gymsessions', __name__)
 
 @gymsessions_blueprint.route('/gymsessions')
 def gymsessions():
-    return render_template('gymsessions/index.html', title='Sessions')
+    gymsessions = gymsession_repository.view_all()
+    return render_template('gymsessions/index.html', title='Sessions', gymsessions=gymsessions)
+

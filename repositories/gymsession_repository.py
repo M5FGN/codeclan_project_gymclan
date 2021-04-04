@@ -18,3 +18,13 @@ def save(gymsession):
     results = run_sql(sql, values)
     gymsession.id = results[0]['id']
     return gymsession
+
+def view_all():
+    gymsessions=[]
+
+    sql = 'SELECT * FROM gymsessions'
+    results = run_sql(sql)
+    for row in results:
+        gymsession = Gymsession(row['gs_title'], row['gs_description'], row['gs_type'], row['ability_level'], row['gs_day'], row['gs_date'], row['gs_time'], row['duration'], row['gs_plan'], row['gs_location'], row['cost'], row['capacity'], row['instructor'])
+        gymsessions.append(gymsession)
+    return gymsessions
