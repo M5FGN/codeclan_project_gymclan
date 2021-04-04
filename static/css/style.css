@@ -9,6 +9,13 @@ h1 {
     margin-top: 0px;
 }
 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: silver;
+    margin-top: 0px; 
+}
+
 p {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
@@ -58,12 +65,15 @@ header {
     grid-area: logo_icon;
     padding-left: 20px;
 }
+
+#home {
+    text-decoration: none;
+}
 .gc_logo {
     font-family: 'Oswald', sans-serif;
     font-size: 34px;
     color: white;
     grid-area: gc_logo;
-    padding-top: 10px;
 }
 
 .gc_sublogo {
@@ -110,14 +120,11 @@ main > nav > ul > li > a :hover {
     color: white;
 }
 
-main > nav > ul > li > a > i, main > nav > ul > li > a > span > i  {
+main > nav > ul > li > a > i {
     padding-right: 15px;
     color: #D72F78;
-} 
-
-.fa-calendar-alt, .fa-calendar-plus, .fa-calendar, .fa-calendar-minus {
     font-size: 24px;
-}
+} 
 
 #splash {
     width: 100%;
@@ -133,6 +140,10 @@ main {
     border-radius: 5px;
 }
 
+ol > li {
+    font-size: 16px;
+    padding-bottom: 6px;
+}
 footer > p {
     font-size: 18px;
     color: white;
