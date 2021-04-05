@@ -41,14 +41,14 @@ gymsession_repository.save(gymsession3)
 
 
 
-# booking1 = Booking(member1, gymsession3)
-# booking_repository.save(booking1)
+booking1 = Booking(member1, gymsession3)
+booking_repository.save(booking1, member1, gymsession3)
 
-# booking2 = Booking(member2, gymsession1, True)
-# booking_repository.save(booking2)
+booking2 = Booking(member2, gymsession1, True)
+booking_repository.save(booking2, member2, gymsession1)
 
-# booking3 = Booking(member2, gymsession3, True)
-# booking_repository.save(booking3)
+booking3 = Booking(member2, gymsession3, True)
+booking_repository.save(booking3, member2, gymsession3)
 
 
 pdb.set_trace()

@@ -43,3 +43,19 @@ def delete_member(id):
     sql = 'DELETE FROM members WHERE id = %s'
     values = [id]
     run_sql(sql, values)
+
+def edit_member(member):
+    sql = 'UPDATE members SET (first_name, last_name, member_type, member_status) = (%s, %s, %s, %s) WHERE id = %s'
+    values = [member.first_name, member.last_name, member.member_type, member.member_status]
+    run_sql(sql, values)
+
+def history(member):
+    gymsessions = []
+    sql = 'SELECT * FROM bookings INNER JOIN gymsessions ON gymsessions.id = bookings.gymsession_id WHERE member_id = %s'
+    values = [member.id]
+    results = run_sql(sql, values)
+
+    for row in results:
+        gymsession = Gymsession(row['gs_title'], row['gs_description'], row['gs_type'], row['ability_level'], row['gs_day'], row['gs_date'], row['gs_time'], row['duration'], row['gs_plan'], row['gs_location'], row['cost'], row['capacity'], row['instructor'], row['id'])
+        gymsessions.append(gymsession)
+    return gymsessions

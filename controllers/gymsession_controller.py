@@ -52,3 +52,5 @@ def delete_gymsession(id):
 def delete_gymsession_save(id):
     gymsession_repository.delete_gymsession(id)
     return redirect('/gymsessions')
+
+

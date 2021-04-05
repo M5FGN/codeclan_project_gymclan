@@ -2,6 +2,21 @@
 
 {% block content %}
 
+<h1>Edit Member - {{member.first_name}} {{member.last_name}}</h1>
+<hr>
+<form action="/members/{{member.id}}/edit_save" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id='first_name' name='first_name' value={{member.first_name}}>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id='last_name' name='last_name' value={{member.last_name}}>
+    <label for="member_type">Member Type:</label>
+    <input type="text" id='member_type' name='member_type' value={{member.member_type}}>
+    <label for="member_status">Member Status:</label>
+    <input type="text" id='member_status' name='member_status' value={{member.member_status}}>
+    <label for=""></label><input type="submit" value="Submit">
+</form>
+<hr>
+
 <nav>
     <ul>
         <li><a class='button' href=""><i class="far fa-save"></i>Save</a></li>

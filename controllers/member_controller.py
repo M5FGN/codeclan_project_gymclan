@@ -5,6 +5,8 @@ import repositories.member_repository as member_repository
 
 members_blueprint = Blueprint('members', __name__)
 
+# View Members
+
 @members_blueprint.route('/members')
 def members():
     members = member_repository.view_all()
@@ -15,6 +17,9 @@ def view(id):
     member = member_repository.view(id)
     return render_template('members/member.html', member=member)  
 # TODO Add title Members Name
+
+
+# Add Members
 
 @members_blueprint.route('/members/add')
 def add():
@@ -30,9 +35,7 @@ def add_member():
     member_repository.save(member)
     return redirect('/members')
 
-@members_blueprint.route('/members/edit')
-def edit():
-    return render_template('members/edit.html', title='Edit Member')
+# Delete Members
 
 @members_blueprint.route('/members/<id>/delete')
 def delete_member(id):
@@ -44,3 +47,25 @@ def delete_member_save(id):
     member_repository.delete_member(id)
     return redirect('/members')
 
+# Edit Members
+
+@members_blueprint.route('/members/<id>/edit', methods=['GET'])
+def edit(id):
+    member = member_repository.view(id)
+    return render_template('members/edit.html', title='Edit Member', member=member)
+
+@members_blueprint.route('/members/<id>/edit_save', methods=['POST'])
+def edit_save(id):
+    first_name = request.form['first_name']
+    last_name = request.form['last_name']
+    member_type = request.form['member_type']
+    member_status = request.form['member_status']
+    member = Member(first_name, last_name, member_type, member_status)
+    member_repository.edit_member(member)
+    return redirect('/members')
+
+@members_blueprint.route('/members/<id>/history')
+def history(id):
+    member = member_repository.view(id)
+    gymsessions = member_repository.history(member)
+    return render_template ('members/history.html', title='Session History', member=member, gymsessions=gymsessions)
