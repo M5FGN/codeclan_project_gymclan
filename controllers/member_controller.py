@@ -15,3 +15,7 @@ def view(id):
     member = member_repository.view(id)
     return render_template('members/member.html', member=member)  
 # Add title Members Name
+
+@members_blueprint.route('/members/add')
+def add():
+    return render_template('members/add.html', title='Add New Member')
