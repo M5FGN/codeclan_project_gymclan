@@ -22,6 +22,10 @@ p {
     font-size: 18px;
 }
 
+.red {
+    color: #D72F78;
+}
+
 .button {
     display: inline-block;
     border: 2px solid #D72F78;
@@ -38,6 +42,18 @@ p {
     background-color: #D72F78;
     color: white;
 }
+
+.basic_link {
+    font-family: 'Antic Slab', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #D72F78;
+}
+
+.basic_link_text {
+    padding-left: 10px;
+}
+
 
 
 .fa-dumbbell {
@@ -183,6 +199,10 @@ main > form > input {
     grid-area: 'input';
 }
 
+.page_title {
+    color: #D72F78;
+    padding-right: 20px;
+}
 
 footer > p {
     font-size: 18px;

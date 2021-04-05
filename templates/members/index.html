@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>Memebers</h1>
+<h1><i class="fas fa-users page_title"></i>Memebers</h1>
 
 <section>
     <hr>
@@ -17,7 +17,7 @@
         </tr>
         {% for member in members %}
         <tr>
-            <td><a href="/members/{{ member.id }}"><i class="fas fa-angle-double-right"></i></a></td><td>{{member.id}}</td><td>{{member.first_name}}</td><td>{{member.last_name}}</td><td>{{member.member_type}}</td><td>{{member.member_status}}</td>
+            <td><a href="/members/{{ member.id }}"><i class="fas fa-angle-double-right red"></i></a></td><td>{{member.id}}</td><td>{{member.first_name}}</td><td>{{member.last_name}}</td><td>{{member.member_type}}</td><td>{{member.member_status}}</td>
         </tr>
         {% endfor %}
         
@@ -27,10 +27,7 @@
 
     <nav>
         <ul>
-            <li><a class = 'button' href=""><i class="fas fa-users"></i>View All Members</a></li>
             <li><a class = 'button' href="/members/add"><i class="fas fa-user-plus"></i>Add a Member</a></li>
-            <li><a class = 'button' href=""><i class="fas fa-user"></i>Edit a Member</a></li>
-            <li><a class = 'button' href=""><i class="fas fa-user-minus"></i>Delete a Member</a></li>
         </ul>
     </nav>
 

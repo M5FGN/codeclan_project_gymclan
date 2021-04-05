@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a class='basic_link' href="/members"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
 <h1>{{member.first_name}} {{member.last_name}}</h1>
 
 <hr>
@@ -9,13 +10,6 @@
         <th>Membership Number:</th>
         <td>{{member.id}}</td>
     </tr>
-    <tr>
-        <th>First Name:</th>
-        <td>{{member.first_name}}</td>
-    </tr>
-    <tr>
-        <th>Last Name:</th>
-        <td>{{member.last_name}}</td>
     <tr>
         <th>Member Type:</th>
         <td>{{member.member_type}}</td>
@@ -30,10 +24,8 @@
 
     <nav>
         <ul>
-            <li><a class='button' href=""><i class="fas fa-users"></i>View All Members</a></li>
-            <li><a class='button' href=""><i class="fas fa-user-plus"></i>Add a Member</a></li>
-            <li><a class='button' href=""><i class="fas fa-user"></i>Edit a Member</a></li>
-            <li><a class='button' href=""><i class="fas fa-user-minus"></i>Delete a Member</a></li>
+            <li><a class='button' href=""><i class="fas fa-user"></i>Edit Member</a></li>
+            <li><a class='button' href=""><i class="fas fa-user-minus"></i>Delete Member</a></li>
         </ul>
     </nav>
 

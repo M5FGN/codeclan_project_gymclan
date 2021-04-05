@@ -22,6 +22,12 @@ member_repository.save(member2)
 member3 = Member('Peter', 'Parker', 'Standard', 'Active')
 member_repository.save(member3)
 
+member4 = Member('Jessica', 'Drew', 'Premium', 'Inactive')
+member_repository.save(member4)
+
+member5 = Member('Steve', 'Rodgers', 'Standard', 'Active')
+member_repository.save(member5)
+
 
 
 gymsession1 = Gymsession('Les Mills - Body Pump', 'A full body weights workout.', 'Strength', 'Moderate', 'Monday', '05/04/21', '13.00', 45, 'Peak', 'Gym 1', 4.50, 10, 'Lonnie Machin')
