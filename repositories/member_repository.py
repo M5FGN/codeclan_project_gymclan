@@ -39,3 +39,7 @@ def view(id):
         member = Member(result['first_name'], result['last_name'], result['member_type'], result['member_status'], result['id'])
     return member
 
+def delete_member(id):
+    sql = 'DELETE FROM members WHERE id = %s'
+    values = [id]
+    run_sql(sql, values)

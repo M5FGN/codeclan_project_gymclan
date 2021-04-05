@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from flask import Blueprint
 from models.member import Member
 import repositories.member_repository as member_repository
@@ -24,6 +24,12 @@ def add():
 def edit():
     return render_template('members/edit.html', title='Edit Member')
 
-@members_blueprint.route('/members/delete')
-def delete_member():
-    return render_template('members/delete.html', title='Delete Member')
+@members_blueprint.route('/members/<id>/delete')
+def delete_member(id):
+    member = member_repository.view(id)
+    return render_template('members/delete.html', title='Delete Member', member=member)
+
+@members_blueprint.route('/members/<id>/delete_confirmation')
+def delete_member_save(id):
+    member_repository.delete_member(id)
+    return redirect('/members')
