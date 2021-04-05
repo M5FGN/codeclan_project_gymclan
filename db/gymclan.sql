@@ -29,8 +29,8 @@ CREATE TABLE gymsessions (
 
 CREATE TABLE bookings (
     id SERIAL PRIMARY KEY, 
-    member_id INT REFERENCES members(id),
-    gymsession_id INT REFERENCES gymsessions(id),
+    member_id INT REFERENCES members(id) ON DELETE CASCADE,
+    gymsession_id INT REFERENCES gymsessions(id) ON DELETE CASCADE,
     attendance BOOLEAN
 );
 
