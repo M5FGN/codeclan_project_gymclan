@@ -163,6 +163,25 @@ ol > li {
     padding: 0px 30px 10px 0px;
 }
 
+main > form {
+    display: grid;
+    grid-template-columns: 150px 300px;
+    grid-template-columns: 
+    'label input';
+}
+
+main > form > label {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    padding-top: 10px;
+    grid-area: 'label';
+}
+
+main > form > input {
+    margin: 5px;
+    padding: 5px;
+    grid-area: 'input';
+}
 
 
 footer > p {

@@ -25,6 +25,16 @@ def view_all():
     sql = 'SELECT * FROM members'
     results = run_sql(sql)
     for row in results:
-        member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'])
+        member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'], row['id'])
         members.append(member)
     return members
+
+def view(id):
+    member = None
+    sql = 'SELECT * FROM members WHERE id = %s'
+    values = [id]
+    result = run_sql(sql, values)[0]
+
+    if result is not None:
+        member = Member(result['first_name'], result['last_name'], result['member_type'], result['member_status'], result['id'])
+    return member

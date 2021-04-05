@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,33 @@
     <!-- Flask CSS Link -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- Live Server CSS Link -->
-    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
-    <script src="https://kit.fontawesome.com/b9cf35b5bd.js"></script> 
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/b9cf35b5bd.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Oswald&display=swap" rel="stylesheet">
     <title>Gym Clan :: {{ title }}</title>
 </head>
+
 <body>
     <header>
-        <div id='logo'><i class="fas fa-dumbbell logo_icon "></i><a id='home' href="/"><span class='gc_logo'>GYM CLAN</span></a><span class='gc_sublogo'>Fitness Studio</span></div>
+        <div id='logo'><i class="fas fa-dumbbell logo_icon "></i><a id='home' href="/"><span class='gc_logo'>GYM
+                    CLAN</span></a><span class='gc_sublogo'>Fitness Studio</span></div>
         <nav>
             <ul>
                 <li><a href="/members"><i class="fas fa-users"></i>Members</a></li>
                 <li><a href="/gymsessions"><i class="far fa-calendar-alt"></i>Sessions</a></li>
                 <li><a href="/help"><i class="fas fa-question"></i>Help</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <main>
         {% block content %}
-            
-        {% endblock %}
+        {% endblock %}   
     </main>
-    <!-- <main>
-        <h1>Page Heading</h1>
-        <p>Test</p>
-        <a href="index.html" class='button'>Button</a>
-    </main> -->
-    <!-- <main>
 
-
-
-        <div class="display">
-
-        </div>
-    </main> -->
     <footer>
         <p>Gym Clan &#169;2021</p>
     </footer>
-    
+
 </body>
+
 </html>

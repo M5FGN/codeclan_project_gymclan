@@ -8,6 +8,7 @@
     <hr>
     <table class = 'results'>
         <tr>
+            <th>See More</th>
             <th>Session Title</th>
             <th>Session Type</th>
             <th>Ability Level</th>
@@ -16,7 +17,7 @@
         </tr>
         {% for gymsession in gymsessions %}
         <tr>
-            <td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_type}}</td><td>{{gymsession.ability_level}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_plan}}</td>
+            <td><i class="fas fa-angle-double-right"></i></td><td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_type}}</td><td>{{gymsession.ability_level}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_plan}}</td>
         </tr>
         {% endfor %}
         
