@@ -14,8 +14,16 @@ def members():
 def view(id):
     member = member_repository.view(id)
     return render_template('members/member.html', member=member)  
-# Add title Members Name
+# TODO Add title Members Name
 
 @members_blueprint.route('/members/add')
 def add():
     return render_template('members/add.html', title='Add New Member')
+
+@members_blueprint.route('/members/edit')
+def edit():
+    return render_template('members/edit.html', title='Edit Member')
+
+@members_blueprint.route('/members/delete')
+def delete_member():
+    return render_template('members/delete.html', title='Delete Member')

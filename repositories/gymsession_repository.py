@@ -25,6 +25,16 @@ def view_all():
     sql = 'SELECT * FROM gymsessions'
     results = run_sql(sql)
     for row in results:
-        gymsession = Gymsession(row['gs_title'], row['gs_description'], row['gs_type'], row['ability_level'], row['gs_day'], row['gs_date'], row['gs_time'], row['duration'], row['gs_plan'], row['gs_location'], row['cost'], row['capacity'], row['instructor'])
+        gymsession = Gymsession(row['gs_title'], row['gs_description'], row['gs_type'], row['ability_level'], row['gs_day'], row['gs_date'], row['gs_time'], row['duration'], row['gs_plan'], row['gs_location'], row['cost'], row['capacity'], row['instructor'], row['id'])
         gymsessions.append(gymsession)
     return gymsessions
+
+def view(id):
+    gymsession = None
+    sql = 'SELECT * FROM gymsessions WHERE id = %s'
+    values = [id]
+    result = run_sql(sql, values)[0]
+
+    if result is not None:
+        gymsession = Gymsession(result['gs_title'], result['gs_description'], result['gs_type'], result['ability_level'], result['gs_day'], result['gs_date'], result['gs_time'], result['duration'], result['gs_plan'], result['gs_location'], result['cost'], result['capacity'], result['instructor'], result['id'])
+    return gymsession

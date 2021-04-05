@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<a class='basic_link' href="/gymsessions"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<h1>{{gymsession.gs_title}}</h1>
+
+<hr>
+<table class='results'>
+    <tr>
+        <th>Session Description:</th>
+        <td>{{gymsession.gs_description}}</td>
+    </tr>
+    <tr>
+        <th>Session Type:</th>
+        <td>{{gymsession.gs_type}}</td>
+    <tr>
+    </tr>
+    <tr>
+        <th>Ability Level:</th>
+        <td>{{gymsession.ability_level}}</td>
+    </tr>
+    <tr>
+        <th>Session Day:</th>
+        <td>{{gymsession.gs_day}}</td>
+    </tr>
+    <tr>
+        <th>Session Date:</th>
+        <td>{{gymsession.gs_date}}</td>
+    <tr>
+    </tr>
+    <tr>
+        <th>Session Time:</th>
+        <td>{{gymsession.gs_time}}</td>
+    </tr>
+    <tr>
+        <th>Session Duration:</th>
+        <td>{{gymsession.duration}}</td>
+    </tr>
+    <tr>
+        <th>Session Plan:</th>
+        <td>{{gymsession.gs_plan}}</td>
+    <tr>
+    </tr>
+    <tr>
+        <th>Session Location:</th>
+        <td>{{gymsession.gs_location}}</td>
+    </tr>
+    <tr>
+        <th>Session Cost:</th>
+        <td>{{gymsession.cost}}</td>
+    </tr>
+    <tr>
+        <th>Session Capacity:</th>
+        <td>{{gymsession.capacity}}</td>
+    <tr>
+    </tr>
+    <tr>
+        <th>Session Instructor:</th>
+        <td>{{gymsession.instructor}}</td>
+    </tr>
+</table>
+    <hr>
+
+<nav>
+    <ul>
+        <li><a class = 'button' href="/gymsessions/edit"><i class="far fa-calendar"></i>Edit Session</a></li>
+        <li><a class = 'button' href="/gymsessions/delete"><i class="far fa-calendar-minus"></i>Delete Session</a></li>
+    </ul>
+</nav>
+
+{% endblock content %}

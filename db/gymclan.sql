@@ -22,7 +22,7 @@ CREATE TABLE gymsessions (
     duration VARCHAR,
     gs_plan VARCHAR,
     gs_location VARCHAR,
-    cost INT,
+    cost DECIMAL,
     capacity INT,
     instructor VARCHAR
 );

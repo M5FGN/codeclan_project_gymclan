@@ -38,3 +38,4 @@ def view(id):
     if result is not None:
         member = Member(result['first_name'], result['last_name'], result['member_type'], result['member_status'], result['id'])
     return member
+
