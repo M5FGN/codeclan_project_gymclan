@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1><i class="fas fa-users page_title"></i>{{gymsession.gs_title}} - Participants</h1>
+
+<section>
+    <hr>
+    <table class = 'results'>
+        <tr>
+            <th>Cancel</th>
+            <!-- <th>Attended</th> -->
+            <th>Membership Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Member Type</th>
+            <th>Member Status</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td><a href=""><i class="far fa-trash-alt red"></i></a></td>
+            <td>{{member.id}}</td>
+            <!-- <td>Attendance to be added</td> -->
+            <td>{{member.first_name}}</td>
+            <td>{{member.last_name}}</td>
+            <td>{{member.member_type}}</td>
+            <td>{{member.member_status}}</td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    <hr>
+</section>
+    
+{% endblock  %}

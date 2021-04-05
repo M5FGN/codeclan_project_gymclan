@@ -53,4 +53,11 @@ def delete_gymsession_save(id):
     gymsession_repository.delete_gymsession(id)
     return redirect('/gymsessions')
 
+@gymsessions_blueprint.route('/gymsessions/<id>/participants')
+def check_bookings(id):
+    gymsession = gymsession_repository.view(id)
+    members = gymsession_repository.participants(gymsession)
+    return render_template ('gymsessions/participants.html', Title='Participants', gymsession=gymsession, members=members)
+
+
 
