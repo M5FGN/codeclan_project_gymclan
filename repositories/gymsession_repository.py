@@ -38,3 +38,8 @@ def view(id):
     if result is not None:
         gymsession = Gymsession(result['gs_title'], result['gs_description'], result['gs_type'], result['ability_level'], result['gs_day'], result['gs_date'], result['gs_time'], result['duration'], result['gs_plan'], result['gs_location'], result['cost'], result['capacity'], result['instructor'], result['id'])
     return gymsession
+
+def delete_gymsession(id):
+    sql = 'DELETE FROM gymsessions WHERE id = %s'
+    values = [id]
+    run_sql(sql, values)

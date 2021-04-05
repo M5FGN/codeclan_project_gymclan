@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from flask import Blueprint
 from models.gymsession import Gymsession
 import repositories.gymsession_repository as gymsession_repository
@@ -13,7 +13,7 @@ def gymsessions():
 @gymsessions_blueprint.route('/gymsessions/<id>')
 def view(id):
     gymsession = gymsession_repository.view(id)
-    return render_template('gymsessions/gymsession.html', gymsession=gymsession)  
+    return render_template('gymsessions/gymsession.html', title='Session Details', gymsession=gymsession)  
 # TODO Add title Session Title
 
 @gymsessions_blueprint.route('/gymsessions/add')
@@ -24,6 +24,12 @@ def add():
 def edit():
     return render_template('gymsessions/edit.html', title='Edit Session')
 
-@gymsessions_blueprint.route('/gymsessions/delete')
-def delete_gymsession():
-    return render_template('gymsessions/delete.html', title='Delete Session')
+@gymsessions_blueprint.route('/gymsessions/<id>/delete')
+def delete_gymsession(id):
+    gymsession = gymsession_repository.view(id)
+    return render_template('gymsessions/delete.html', title='Delete Session', gymsession=gymsession)
+
+@gymsessions_blueprint.route('/gymsessions/<id>/delete_confirmation')
+def delete_gymsession_save(id):
+    gymsession_repository.delete_gymsession(id)
+    return redirect('/gymsessions')

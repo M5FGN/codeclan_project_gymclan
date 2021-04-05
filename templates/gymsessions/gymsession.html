@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/gymsessions"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/gymsessions"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 <h1>{{gymsession.gs_title}}</h1>
 
 <hr>
@@ -59,12 +60,12 @@
         <td>{{gymsession.instructor}}</td>
     </tr>
 </table>
-    <hr>
+<hr>
 
 <nav>
     <ul>
-        <li><a class = 'button' href="/gymsessions/edit"><i class="far fa-calendar"></i>Edit Session</a></li>
-        <li><a class = 'button' href="/gymsessions/delete"><i class="far fa-calendar-minus"></i>Delete Session</a></li>
+        <li><a class='button' href="/gymsessions/edit"><i class="far fa-calendar"></i>Edit Session</a></li>
+        <li><a class='button' href="/gymsessions/{{gymsession.id}}/delete"><i class="far fa-calendar-minus"></i>Delete Session</a></li>
     </ul>
 </nav>
 

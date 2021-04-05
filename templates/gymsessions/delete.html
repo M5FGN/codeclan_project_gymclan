@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
+
+<h1>{{gymsession.gs_title}}</h1>
+
+<p>Deleting {{gymsession.gs_title}}</p>
 <nav>
     <ul>
-        <li><a class='button' href=""><i class="far fa-save"></i>Save</a></li>
-        <li><a class='button' href=""><i class="fas fa-ban"></i></i>Cancel</a></li>
+        <li><a class='button' href="/gymsessions/{{gymsession.id}}/delete_confirmation"><i class="far fa-save"></i>Save</a></li>
+        <li><a class='button' href="/gymsessions/{{gymsession.id}}"><i class="fas fa-ban"></i></i>Cancel</a></li>
     </ul>
 </nav>
 
