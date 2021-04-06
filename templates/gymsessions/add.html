@@ -7,32 +7,55 @@
 <hr>
 <form action="/gymsessions/add_gymsession" method="post">
     <label for="gs_title">Title:</label>
-    <input type="text" id='gs_title' name='gs_title'>
+    <input type="text" id='gs_title' name='gs_title' required>
     <label for="gs_description">Description:</label>
-    <input type="text" id='gs_description' name='gs_description'>
-    <label for="gs_type">Type:</label>
-    <input type="text" id='gs_type' name='gs_type'>
-    <label for="ability_level">Ability Level:</label>
-    <input type="text" id='ability_level' name='ability_level'>
+    <input type="text" id='gs_description' name='gs_description' required>
+    <p>Session Type:</p>
+    <span class='radio'>
+    <label for="cardio">Cardio</label>
+    <input type="radio" name="gs_type" id="cardio" value='Cardio' checked='checked'>
+    <label for="strength">Strength</label>
+    <input type="radio" name="gs_type" id="strength" value='Strength'>
+    <label for="flexibility">Flexibility</label>
+    <input type="radio" name="gs_type" id="flexibility" value='Flexibility'></span>
+
+    <!-- <label for="gs_type">Type:</label>
+    <input type="text" id='gs_type' name='gs_type' required> -->
+
+    <p>Ability Level:</p>
+    <span class='radio'>
+    <label for="beginners">Beginners</label>
+    <input type="radio" name="ability_level" id="beginners" value='Beginners' checked='checked'>
+    <label for="moderate">Moderate</label>
+    <input type="radio" name="ability_level" id="moderate" value='Moderate'>
+    <label for="advanced">Advanced</label>
+    <input type="radio" name="ability_level" id="advanced" value='Advanced'></span>
+    <!-- <label for="ability_level">Ability Level:</label>
+    <input type="text" id='ability_level' name='ability_level' required> -->
     <label for="gs_day">Day:</label>
-    <input type="text" id='gs_day' name='gs_day'>
+    <input type="text" id='gs_day' name='gs_day' required>
     <label for="gs_date">Date:</label>
-    <input type="text" id='gs_date' name='gs_date'>
+    <input type="text" id='gs_date' name='gs_date' required>
     <label for="gs_time">Time:</label>
-    <input type="text" id='gs_time' name='gs_time'>
+    <input type="text" id='gs_time' name='gs_time' required>
     <label for="duration">Duration:</label>
-    <input type="text" id='duration' name='duration'>
-    <label for="gs_plan">Plan:</label>
-    <input type="text" id='gs_plan' name='gs_plan'>
+    <input type="text" id='duration' name='duration' required>
+    <p>Plan:</p>
+    <span class='radio'><label for="Standard">Standard</label>
+    <input type="radio" name="gs_plan" id="Standard" value='Standard' checked='checked'>
+    <label for="Premium">Premium</label>
+    <input type="radio" name="gs_plan" id="Premium" value='Premium'></span>
+    <!-- <label for="gs_plan">Plan:</label>
+    <input type="text" id='gs_plan' name='gs_plan' value='Peak'> -->
     <label for="gs_location">Location:</label>
-    <input type="text" id='gs_location' name='gs_location'>
+    <input type="text" id='gs_location' name='gs_location'required>
     <label for="cost">Cost:</label>
-    <input type="text" id='cost' name='cost'>
+    <input type="text" id='cost' name='cost' required>
     <label for="capacity">Capacity:</label>
-    <input type="text" id='capacity' name='capacity'>
+    <input type="text" id='capacity' name='capacity' required>
     <label for="instructor">Instructor:</label>
-    <input type="text" id='instructor' name='instructor'>
-    <label for=""></label><input type="submit" value="Submit">
+    <input type="text" id='instructor' name='instructor' required>
+    <label for=""></label><input class='submit' type="submit" value="Submit">
 </form>
 <hr>
 

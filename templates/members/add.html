@@ -6,14 +6,32 @@
 <hr>
 <form action="/members/add_member" method="post">
     <label for="first_name">First Name:</label>
-    <input type="text" id='first_name' name='first_name'>
+    <input type="text" id='first_name' name='first_name' required>
     <label for="last_name">Last Name:</label>
-    <input type="text" id='last_name' name='last_name'>
-    <label for="member_type">Member Type:</label>
-    <input type="text" id='member_type' name='member_type'>
-    <label for="member_status">Member Status:</label>
-    <input type="text" id='member_status' name='member_status'>
-    <label for=""></label><input type="submit" value="Submit">
+    <input type="text" id='last_name' name='last_name' required>
+    <p>Member Type:</p>
+    <span class='radio'><label for="standard">Standard</label>
+    <input type="radio" name="member_type" id="standard" value='Standard' checked='checked'>
+    <label for="premium">Premium</label>
+    <input type="radio" name="member_type" id="premium" value='Premium'></span>
+    <p>Member Status:</p>
+    <span class='radio'><label for="active">Active</label>
+    <input type="radio" name="member_status" id="active" value='Active' checked='checked'>
+    <label for="inactive">Inactive</label>
+    <input type="radio" name="member_status" id="inactive" value='Inactive'></span>
+    <!-- <label for="member_type">Member Type:</label> -->
+    <!-- <select name="member_type" id="member_type">
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+    </select> -->
+    <!-- <input type="text" id='member_type' name='member_type' value='Standard'> -->
+    <!-- <label for="member_status">Member Status:</label>
+    <select name="member_status" id="member_status">
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+    </select> -->
+    <!-- <input type="text" id='member_status' name='member_status' value='Active'> -->
+    <label for=""></label><input class ='submit' type="submit" value="Save">
 </form>
 <hr>
 

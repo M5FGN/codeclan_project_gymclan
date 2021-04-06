@@ -1,8 +1,8 @@
 body {
-    background: linear-gradient(90deg, rgba(240,56,43,1) 8%, rgba(196,40,182,1) 81%);
+    background: linear-gradient(90deg, rgba(240, 56, 43, 1) 8%, rgba(196, 40, 182, 1) 81%);
 }
 
-h1 {    
+h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 34px;
     color: silver;
@@ -13,7 +13,7 @@ h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     color: silver;
-    margin-top: 0px; 
+    margin-top: 0px;
 }
 
 
@@ -26,22 +26,35 @@ p {
     color: #D72F78;
 }
 
-.button {
+.button,
+.submit {
     display: inline-block;
     border: 2px solid #D72F78;
     border-radius: 5px;
     padding: 5px 10px;
-    width: 200px;
     font-family: 'Antic Slab', serif;
     font-size: 18px;
     text-decoration: none;
-    color: black;
+    color: #D72F78;
+    background-color: white;
 }
 
-.button:hover {
+.button {
+    width: 200px;
+}
+
+.button:hover,
+.submit:hover {
     background-color: #D72F78;
     color: white;
 }
+
+.button:hover .far,
+.button:hover .fas {
+    color: white;
+}
+
+
 
 .basic_link {
     font-family: 'Antic Slab', serif;
@@ -74,8 +87,8 @@ header {
     grid-template-rows: 0.1fr 0.1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "logo_icon gc_logo"
-      "logo_icon gc_sublogo";
+        "logo_icon gc_logo"
+        "logo_icon gc_sublogo";
 }
 
 .logo_icon {
@@ -86,6 +99,7 @@ header {
 #home {
     text-decoration: none;
 }
+
 .gc_logo {
     font-family: 'Oswald', sans-serif;
     font-size: 34px;
@@ -102,49 +116,50 @@ header {
     font-weight: bolder;
 }
 
-header > nav > ul > li {
+header>nav>ul>li {
     display: inline;
     padding-right: 40px;
     font-size: 28px;
     color: white;
 }
 
-header > nav > ul > li > a {
+header>nav>ul>li>a {
     text-decoration: none;
     color: white;
 }
 
-header > nav > ul > li > a > i {
+header>nav>ul>li>a>i {
     display: inline;
     padding-right: 10px;
     font-size: 20px;
     color: white;
 }
 
-main > nav {
+main>nav {
     padding-top: 20px;
 }
-main > nav > ul > li {
+
+main>nav>ul>li {
     display: inline;
     padding: 10px;
     color: #D72F78;
     font-size: 20px;
 }
 
-main > nav > ul > li > a {
+main>nav>ul>li>a {
     text-decoration: none;
 }
 
-main > nav > ul > li > a :hover {
+main>nav>ul>li>a :hover {
     background-color: #D72F78;
     color: white;
 }
 
-main > nav > ul > li > a > i {
+main>nav>ul>li>a>i {
     padding-right: 15px;
     color: #D72F78;
     font-size: 24px;
-} 
+}
 
 #splash {
     width: 100%;
@@ -160,12 +175,12 @@ main {
     border-radius: 5px;
 }
 
-ol > li {
+ol>li {
     font-size: 16px;
     padding-bottom: 6px;
 }
 
-.results > tbody > tr > th {
+.results>tbody>tr>th {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
     color: silver;
@@ -173,27 +188,39 @@ ol > li {
     text-align: left;
 }
 
-.results > tbody > tr > td {
+.results>tbody>tr>td {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
     padding: 0px 30px 10px 0px;
 }
 
-main > form {
+main>form {
     display: grid;
-    grid-template-columns: 150px 300px;
-    grid-template-columns: 
-    'label input';
+    grid-template-columns: 150px 500px;
+    grid-template-columns:
+        'label input';
 }
 
-main > form > label {
+main>form>label {
     font-family: 'Antic Slab', serif;
     font-size: 18px;
     padding-top: 10px;
     grid-area: 'label';
 }
 
-main > form > input {
+form > span {
+    padding-top: 20px;
+}
+
+form > span > label {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+
+
+main>form>input {
     margin: 5px;
     padding: 5px;
     grid-area: 'input';
@@ -204,11 +231,10 @@ main > form > input {
     padding-right: 20px;
 }
 
-footer > p {
+footer>p {
     font-size: 18px;
     color: white;
     text-align: center;
     font-family: 'Antic Slab', serif;
     font-size: 16px;
 }
-
