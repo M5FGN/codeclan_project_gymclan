@@ -212,9 +212,9 @@ main>form>label {
     grid-area: 'label';
 }
 
-form > span {
+/* form > span {
     padding-top: 20px;
-}
+} */
 
 form > span > label {
     font-family: 'Antic Slab', serif;

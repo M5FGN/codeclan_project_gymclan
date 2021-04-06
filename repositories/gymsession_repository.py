@@ -55,3 +55,10 @@ def participants(gymsession):
         member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'], row['id'])
         members.append(member)
     return members
+
+
+
+def edit_gymsession(gymsession):
+    sql = 'UPDATE gymsessions SET (gs_title, gs_description, gs_type, ability_level, gs_day, gs_date, gs_time, duration, gs_plan, gs_location, cost, capacity, instructor) = (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) WHERE id = %s'
+    values = [gymsession.gs_title, gymsession.gs_description, gymsession.gs_type, gymsession.ability_level, gymsession.gs_day, gymsession.gs_date, gymsession.gs_time, gymsession.duration, gymsession.gs_plan, gymsession.gs_location, gymsession.cost, gymsession.capacity, gymsession.instructor, gymsession.id]
+    run_sql(sql, values)
