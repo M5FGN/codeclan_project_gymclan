@@ -46,7 +46,7 @@ def delete_member(id):
 
 def edit_member(member):
     sql = 'UPDATE members SET (first_name, last_name, member_type, member_status) = (%s, %s, %s, %s) WHERE id = %s'
-    values = [member.first_name, member.last_name, member.member_type, member.member_status]
+    values = [member.first_name, member.last_name, member.member_type, member.member_status, member.id]
     run_sql(sql, values)
 
 def history(member):
@@ -59,3 +59,13 @@ def history(member):
         gymsession = Gymsession(row['gs_title'], row['gs_description'], row['gs_type'], row['ability_level'], row['gs_day'], row['gs_date'], row['gs_time'], row['duration'], row['gs_plan'], row['gs_location'], row['cost'], row['capacity'], row['instructor'], row['id'])
         gymsessions.append(gymsession)
     return gymsessions
+
+def filter (member, status_filter):
+    members = []
+    sql = 'SELECT * FROM members WHERE member_status = %s'
+    values = [status_filter.value]
+    results = run_sql(sql)
+    for row in results:
+        member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'], row['id'])
+        members.append(member)
+    return members

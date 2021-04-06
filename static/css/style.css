@@ -43,6 +43,10 @@ p {
     width: 200px;
 }
 
+.submit {
+    margin-top: 30px;
+}
+
 .button:hover,
 .submit:hover {
     background-color: #D72F78;
@@ -218,6 +222,13 @@ form > span > label {
     padding-left: 30px;
 }
 
+.span_text {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+}
+
+
+
 
 
 main>form>input {
@@ -237,4 +248,16 @@ footer>p {
     text-align: center;
     font-family: 'Antic Slab', serif;
     font-size: 16px;
+}
+
+.filter, .filter_label {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;
+    padding-right: 30px;
+}
+
+.filter_link {
+    font-family: 'Antic Slab', serif;
+    font-size: 18px;  
+    color: #D72F78;
 }

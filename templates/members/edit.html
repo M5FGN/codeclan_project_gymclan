@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a class='basic_link' href="/members/{{member.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
 
 <h1>Edit Member - {{member.first_name}} {{member.last_name}}</h1>
-<hr>
+<!-- <hr>
 <form action="/members/{{member.id}}/edit_save" method="post">
     <label for="first_name">First Name:</label>
     <input type="text" id='first_name' name='first_name' value={{member.first_name}}>
@@ -14,14 +15,26 @@
     <label for="member_status">Member Status:</label>
     <input type="text" id='member_status' name='member_status' value={{member.member_status}}>
     <label for=""></label><input type="submit" value="Submit">
-</form>
+</form> -->
 <hr>
 
-<nav>
-    <ul>
-        <li><a class='button' href=""><i class="far fa-save"></i>Save</a></li>
-        <li><a class='button' href=""><i class="fas fa-ban"></i></i>Cancel</a></li>
-    </ul>
-</nav>
-    
+<form action="/members/{{member.id}}/edit_save" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id='first_name' name='first_name' value={{member.first_name}}>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id='last_name' name='last_name' value={{member.last_name}}>
+    <p>Member Type:</p> <p class='red'>This is a {{member.member_type}} membership.</p>
+    <p></p>
+    <span><span class='span_text'>Change:</span><label for="standard">Standard</label>
+    <input type="radio" name="member_type" id="standard" value='Standard'>
+    <label for="premium">Premium</label>
+    <input type="radio" name="member_type" id="premium" value='Premium'></span>
+    <p>Member Status:</p> <p class='red'>This membership is currenly {{member.member_status}}.</p>
+    <p></p><span><span class='span_text'>Change:</span><label for="active">Active</label>
+    <input type="radio" name="member_status" id="active" value='Active'>
+    <label for="inactive">Inactive</label>
+    <input type="radio" name="member_status" id="inactive" value='Inactive'></span>
+    <label for=""></label><input class='submit' type="submit" value="Save">
+</form>
+
 {% endblock  %}

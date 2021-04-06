@@ -60,7 +60,7 @@ def edit_save(id):
     last_name = request.form['last_name']
     member_type = request.form['member_type']
     member_status = request.form['member_status']
-    member = Member(first_name, last_name, member_type, member_status)
+    member = Member(first_name, last_name, member_type, member_status, id)
     member_repository.edit_member(member)
     return redirect('/members')
 
@@ -69,3 +69,8 @@ def history(id):
     member = member_repository.view(id)
     gymsessions = member_repository.history(member)
     return render_template ('members/history.html', title='Session History', member=member, gymsessions=gymsessions)
+
+@members_blueprint.route('/members/filter')
+def filter(status_filter):
+    member = member_repository.filter(status_filter)
+    return redirect ('/members')

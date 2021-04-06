@@ -4,9 +4,19 @@
 
 <h1><i class="fas fa-users page_title"></i>Members</h1>
 
+<!-- <span class='filter'>Filter:</span>
+<span class='filter_label'>
+    <label for="active">All</label>
+    <input type="radio" name="status_filter" id="all" value='all' checked='checked'>
+    <label for="active">Active</label>
+    <input type="radio" name="status_filter" id="active" value='active'>
+    <label for="inactive">Inactive</label>
+    <input type="radio" name="status_filter" id="inactive" value='inactive'></span>
+    <a class='filter_link' href="/members/filter">Apply</a> -->
+
 <section>
     <hr>
-    <table class = 'results'>
+    <table class='results'>
         <tr>
             <th>See More</th>
             <th>Membership Number</th>
@@ -17,18 +27,23 @@
         </tr>
         {% for member in members %}
         <tr>
-            <td><a href="/members/{{ member.id }}"><i class="fas fa-angle-double-right red"></i></a></td><td>{{member.id}}</td><td>{{member.first_name}}</td><td>{{member.last_name}}</td><td>{{member.member_type}}</td><td>{{member.member_status}}</td>
+            <td><a href="/members/{{ member.id }}"><i class="fas fa-angle-double-right red"></i></a></td>
+            <td>{{member.id}}</td>
+            <td>{{member.first_name}}</td>
+            <td>{{member.last_name}}</td>
+            <td>{{member.member_type}}</td>
+            <td>{{member.member_status}}</td>
         </tr>
         {% endfor %}
-        
+
     </table>
     <hr>
 </section>
 
-    <nav>
-        <ul>
-            <li><a class = 'button' href="/members/add"><i class="fas fa-user-plus"></i>Add a Member</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a class='button' href="/members/add"><i class="fas fa-user-plus"></i>Add a Member</a></li>
+    </ul>
+</nav>
 
 {% endblock content %}
