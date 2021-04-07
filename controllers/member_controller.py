@@ -82,11 +82,11 @@ def history(id):
 # FIXME
 # Filters 
 
-@members_blueprint.route('/members/filter', methods=['POST'])
-def filter(filter_member_status):
-    filter_member_status = request.form['status_filter']
-    members = member_repository.filter(filter_member_status)
-    return redirect ('/members', members=members)
+# @members_blueprint.route('/members/filter', methods=['POST'])
+# def filter():
+#     filter_member_status = request.form['status_filter']
+#     # members = member_repository.filter(filter_member_status)
+#     return redirect('/members/index.html')
 
 
 
