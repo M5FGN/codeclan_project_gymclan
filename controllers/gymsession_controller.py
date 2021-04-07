@@ -1,7 +1,13 @@
 from flask import Flask, render_template, redirect, request
 from flask import Blueprint
+
+from models.member import Member
 from models.gymsession import Gymsession
+from models.booking import Booking
+
+import repositories.member_repository as member_repository
 import repositories.gymsession_repository as gymsession_repository
+import repositories.booking_repository as booking_repository
 
 gymsessions_blueprint = Blueprint('gymsessions', __name__)
 
@@ -49,11 +55,7 @@ def delete_gymsession_save(id):
     gymsession_repository.delete_gymsession(id)
     return redirect('/gymsessions')
 
-@gymsessions_blueprint.route('/gymsessions/<id>/participants')
-def check_bookings(id):
-    gymsession = gymsession_repository.view(id)
-    members = gymsession_repository.participants(gymsession)
-    return render_template ('gymsessions/participants.html', Title='Participants', gymsession=gymsession, members=members)
+
 
 @gymsessions_blueprint.route('/gymsessions/<id>/edit', methods=['GET'])
 def edit(id):
@@ -78,4 +80,11 @@ def edit_save(id):
     gymsession = Gymsession(gs_title, gs_description, gs_type, ability_level, gs_day, gs_date, gs_time, duration, gs_plan, gs_location, cost, capacity, instructor, id)
     gymsession_repository.edit_gymsession(gymsession)
     return redirect('/gymsessions')
+
+# Display Participants
+@gymsessions_blueprint.route('/gymsessions/<id>/participants')
+def check_bookings(id):
+    gymsession = gymsession_repository.view(id)
+    bookings = gymsession_repository.bookings(gymsession)
+    return render_template ('gymsessions/participants.html', Title='Participants', gymsession=gymsession, bookings=bookings)
 

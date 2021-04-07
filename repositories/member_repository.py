@@ -60,12 +60,13 @@ def history(member):
         gymsessions.append(gymsession)
     return gymsessions
 
-def filter (member, status_filter):
+def filter (filter_member_status):
     members = []
     sql = 'SELECT * FROM members WHERE member_status = %s'
-    values = [status_filter.value]
+    values = [filter_member_status]
     results = run_sql(sql)
     for row in results:
         member = Member(row['first_name'], row['last_name'], row['member_type'], row['member_status'], row['id'])
         members.append(member)
     return members
+

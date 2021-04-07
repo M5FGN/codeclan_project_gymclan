@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Session Cancelation - {{gymsession.gs_title}} - {{gymsession.gs_date}} at {{gymsession.gs_time}}</h1>
+
+<p>Cancelling {{member.first_name}} {{member.last_name}}'s session ...</p>
+
+<nav>
+    <ul>
+        <li><a class='button' href=""><i class="far fa-trash-alt"></i>Delete</a></li>
+        <li><a class='button' href=""><i class="fas fa-ban"></i></i>Cancel</a></li>
+    </ul>
+</nav>
+    
+{% endblock %}

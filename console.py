@@ -45,22 +45,22 @@ member_repository.save(member10)
 
 
 
-gymsession1 = Gymsession('Les Mills : Body Pump', 'A full body weights workout.', 'Strength', 'Moderate', 'Monday', '05/04/21', '13.00', 45, 'Off Peak', 'Gym 1', 4.50, 10, 'Lonnie Machin')
+gymsession1 = Gymsession('Les Mills : Body Pump', 'A full body weights workout.', 'Strength', 'Moderate', 'Monday', '05/04/21', '13.00', 45, 'Standard', 'Gym 1', 4.50, 10, 'Lonnie Machin')
 gymsession_repository.save(gymsession1)
 
-gymsession2 = Gymsession('Les Mills : Body Combat', 'High energy martial arts inspired workout.', 'Cardio', 'Advanced', 'Wednesday', '07/04/21', '15.00', 60, 'Off Peak', 'Gym 2', 4.50, 10, 'Selina Kyle')
+gymsession2 = Gymsession('Les Mills : Body Combat', 'High energy martial arts inspired workout.', 'Cardio', 'Advanced', 'Wednesday', '07/04/21', '15.00', 60, 'Standard', 'Gym 2', 4.50, 10, 'Selina Kyle')
 gymsession_repository.save(gymsession2)
 
-gymsession3 = Gymsession('Les Mills : Body Balance', 'A Yoga based class that will improve your mind, your body and your life', 'Flexibility', 'Beginner', 'Friday', '09/04/21', '11.00', 90, 'Peak', 'Gym 2', 4.50, 15, 'Selina Kyle')
+gymsession3 = Gymsession('Les Mills : Body Balance', 'A Yoga based class that will improve your mind, your body and your life', 'Flexibility', 'Beginner', 'Friday', '09/04/21', '11.00', 90, 'Premium', 'Gym 2', 4.50, 15, 'Selina Kyle')
 gymsession_repository.save(gymsession3)
 
-gymsession4 = Gymsession('Les Mills : Core', 'Ultimte core workout for incredible core strength and sports performance.', 'Strength', 'Moderate', 'Friday', '09/04/21', '9.00', 60, 'Peak', 'Gym 2', 4.50, 10, 'Lillian Rose')
+gymsession4 = Gymsession('Les Mills : Core', 'Ultimte core workout for incredible core strength and sports performance.', 'Strength', 'Moderate', 'Friday', '09/04/21', '9.00', 60, 'Premium', 'Gym 2', 4.50, 10, 'Lillian Rose')
 gymsession_repository.save(gymsession4)
 
-gymsession5 = Gymsession('Les Mills : Body Attack', 'High energy fitness class with moves that cater for total beginners.', 'Flexibilty', 'Beginner', 'Wednesday', '07/04/21', '11.00', 45, 'Peak', 'Gym 1', 4.50, 10, 'Lillian Rose')
+gymsession5 = Gymsession('Les Mills : Body Attack', 'High energy fitness class with moves that cater for total beginners.', 'Flexibility', 'Beginner', 'Wednesday', '07/04/21', '11.00', 45, 'Premium', 'Gym 1', 4.50, 10, 'Lillian Rose')
 gymsession_repository.save(gymsession5)
 
-gymsession6 = Gymsession('Les Mills : Body RPM', 'Indoor cycling class, set to the rhythm of motivating music.', 'Cardio', 'Moderate', 'Monday', '05/04/21', '13.00', 45, 'Peak', 'Gym 1', 4.50, 5, 'Lillian Rose')
+gymsession6 = Gymsession('Les Mills : Body RPM', 'Indoor cycling class, set to the rhythm of motivating music.', 'Cardio', 'Moderate', 'Monday', '05/04/21', '13.00', 45, 'Premium', 'Gym 1', 4.50, 5, 'Lillian Rose')
 gymsession_repository.save(gymsession6)
 
 

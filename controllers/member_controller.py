@@ -1,7 +1,13 @@
 from flask import Flask, render_template, redirect, request
 from flask import Blueprint
+
 from models.member import Member
+from models.gymsession import Gymsession
+from models.booking import Booking
+
 import repositories.member_repository as member_repository
+import repositories.gymsession_repository as gymsession_repository
+import repositories.booking_repository as booking_repository
 
 members_blueprint = Blueprint('members', __name__)
 
@@ -15,7 +21,7 @@ def members():
 @members_blueprint.route('/members/<id>')
 def view(id):
     member = member_repository.view(id)
-    return render_template('members/member.html', member=member)  
+    return render_template('members/member.html', title='Member Profile', member=member)  
 # TODO Add title Members Name
 
 
@@ -64,13 +70,25 @@ def edit_save(id):
     member_repository.edit_member(member)
     return redirect('/members')
 
+# View Session History
+
 @members_blueprint.route('/members/<id>/history')
 def history(id):
     member = member_repository.view(id)
     gymsessions = member_repository.history(member)
     return render_template ('members/history.html', title='Session History', member=member, gymsessions=gymsessions)
 
-@members_blueprint.route('/members/filter')
-def filter(status_filter):
-    member = member_repository.filter(status_filter)
-    return redirect ('/members')
+
+# FIXME
+# Filters 
+
+@members_blueprint.route('/members/filter', methods=['POST'])
+def filter(filter_member_status):
+    filter_member_status = request.form['status_filter']
+    members = member_repository.filter(filter_member_status)
+    return redirect ('/members', members=members)
+
+
+
+
+

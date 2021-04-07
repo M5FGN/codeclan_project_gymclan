@@ -62,3 +62,16 @@ def edit_gymsession(gymsession):
     sql = 'UPDATE gymsessions SET (gs_title, gs_description, gs_type, ability_level, gs_day, gs_date, gs_time, duration, gs_plan, gs_location, cost, capacity, instructor) = (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) WHERE id = %s'
     values = [gymsession.gs_title, gymsession.gs_description, gymsession.gs_type, gymsession.ability_level, gymsession.gs_day, gymsession.gs_date, gymsession.gs_time, gymsession.duration, gymsession.gs_plan, gymsession.gs_location, gymsession.cost, gymsession.capacity, gymsession.instructor, gymsession.id]
     run_sql(sql, values)
+
+
+def bookings(gymsession):
+    sql = 'SELECT * FROM bookings WHERE gymsession_id = %s'
+    values = [gymsession.id]
+    results = run_sql(sql, values)
+    bookings = []
+    for row in results:
+        member = member_repository.view(row['member_id'])
+        gymsession = gymsession_repository.view(row['gymsession_id'])
+        booking = Booking(member, gymsession, row['attended'], row['id'])
+        bookings.append(booking)
+    return bookings

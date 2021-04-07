@@ -1,8 +1,8 @@
 class Booking:
 
-    def __init__(self, member_id, gymsession_id, attended = False, id = None):
-        self.member_id = member_id
-        self.gymsession_id = gymsession_id
+    def __init__(self, member, gymsession, attended = False, id = None):
+        self.member = member
+        self.gymsession = gymsession
         self.attended = attended
         self.id = id
 

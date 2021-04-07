@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a class='basic_link' href="/gymsessions/{{gymsession.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
 
 <h1><i class="fas fa-users page_title"></i>{{gymsession.gs_title}} - Participants</h1>
-
 <section>
     <hr>
     <table class = 'results'>
@@ -16,15 +16,15 @@
             <th>Member Type</th>
             <th>Member Status</th>
         </tr>
-        {% for member in members %}
+        {% for booking in bookings %}
         <tr>
             <td><a href=""><i class="far fa-trash-alt red"></i></a></td>
-            <td>{{member.id}}</td>
+            <td>{{booking.member.id}} {{booking.id}}</td>
             <!-- <td>Attendance to be added</td> -->
-            <td>{{member.first_name}}</td>
-            <td>{{member.last_name}}</td>
-            <td>{{member.member_type}}</td>
-            <td>{{member.member_status}}</td>
+            <td>{{booking.member.first_name}}</td>
+            <td>{{booking.member.last_name}}</td>
+            <td>{{booking.member.member_type}}</td>
+            <td>{{booking.member.member_status}}</td>
         </tr>
         {% endfor %}
         
@@ -32,10 +32,10 @@
     <hr>
 </section>
 
-<nav>
+<!-- <nav>
     <ul>
         <li><a class='button' href=""><i class="fas fa-user-plus"></i>Add a Participant</a></li>
     </ul>
-</nav>
+</nav> -->
     
 {% endblock  %}
