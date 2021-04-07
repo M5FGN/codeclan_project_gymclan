@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/members"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/members"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 <h1>Add New Member</h1>
 <hr>
 <form action="/members/add_member" method="post">
@@ -11,14 +12,14 @@
     <input type="text" id='last_name' name='last_name' required>
     <p>Member Type:</p>
     <span class='radio'><label for="standard">Standard</label>
-    <input type="radio" name="member_type" id="standard" value='Standard' checked='checked'>
-    <label for="premium">Premium</label>
-    <input type="radio" name="member_type" id="premium" value='Premium'></span>
+        <input type="radio" name="member_type" id="standard" value='Standard' checked='checked'>
+        <label for="premium">Premium</label>
+        <input type="radio" name="member_type" id="premium" value='Premium'></span>
     <p>Member Status:</p>
     <span class='radio'><label for="active">Active</label>
-    <input type="radio" name="member_status" id="active" value='Active' checked='checked'>
-    <label for="inactive">Inactive</label>
-    <input type="radio" name="member_status" id="inactive" value='Inactive'></span>
+        <input type="radio" name="member_status" id="active" value='Active' checked='checked'>
+        <label for="inactive">Inactive</label>
+        <input type="radio" name="member_status" id="inactive" value='Inactive'></span>
     <!-- <label for="member_type">Member Type:</label> -->
     <!-- <select name="member_type" id="member_type">
         <option value="Standard">Standard</option>
@@ -31,7 +32,7 @@
         <option value="Inactive">Inactive</option>
     </select> -->
     <!-- <input type="text" id='member_status' name='member_status' value='Active'> -->
-    <label for=""></label><input class ='submit' type="submit" value="Save">
+    <label for=""></label><input class='submit' type="submit" value="Save">
 </form>
 <hr>
 

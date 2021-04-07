@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/members/{{member.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/members/{{member.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 
 <h1>Edit Member - {{member.first_name}} {{member.last_name}}</h1>
 <!-- <hr>
@@ -23,8 +24,8 @@
     <input type="text" id='first_name' name='first_name' value={{member.first_name}}>
     <label for="last_name">Last Name:</label>
     <input type="text" id='last_name' name='last_name' value={{member.last_name}}>
-    
-    
+
+
     <!-- <p>Member Type:</p> <p class='red'>This is a {{member.member_type}} membership.</p>
     <p></p>
     <span><span class='span_text'>Change:</span><label for="standard">Standard</label>
@@ -34,19 +35,19 @@
 
     <p>Member Type:</p>
     <span><label for="standard">Standard</label>
-    <input type="radio" name="member_type" id="standard" value='Standard' 
-    {% if member.member_type == 'Standard' %} checked='checked' {% endif %}>
-    <label for="premium">Premium</label>
-    <input type="radio" name="member_type" id="premium" value='Premium'
-    {% if member.member_type == 'Premium' %} checked='checked' {% endif %}></span>
+        <input type="radio" name="member_type" id="standard" value='Standard' {% if member.member_type == 'Standard' %}
+            checked='checked' {% endif %}>
+        <label for="premium">Premium</label>
+        <input type="radio" name="member_type" id="premium" value='Premium' {% if member.member_type == 'Premium' %}
+            checked='checked' {% endif %}></span>
 
-    <p>Member Status:</p> 
+    <p>Member Status:</p>
     <span><label for="active">Active</label>
-    <input type="radio" name="member_status" id="active" value='Active'
-    {% if member.member_status == 'Active' %} checked='checked' {% endif %}>
-    <label for="inactive">Inactive</label>
-    <input type="radio" name="member_status" id="inactive" value='Inactive'
-    {% if member.member_status == 'Inactive' %} checked='checked' {% endif %}></span>
+        <input type="radio" name="member_status" id="active" value='Active' {% if member.member_status == 'Active' %}
+            checked='checked' {% endif %}>
+        <label for="inactive">Inactive</label>
+        <input type="radio" name="member_status" id="inactive" value='Inactive'
+            {% if member.member_status == 'Inactive' %} checked='checked' {% endif %}></span>
     <label for=""></label><input class='submit' type="submit" value="Save">
 </form>
 

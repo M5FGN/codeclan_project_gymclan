@@ -41,7 +41,7 @@ def delete_booking(id):
 
 @bookings_blueprint.route('/bookings/delete/confirmation')
 def confirm_deletion():
-    return render_template('/bookings/confirm_delete.html')
+    return render_template('/bookings/confirm_delete.html', title='Cancellation Confirmation')
 
 # Add Booking
 

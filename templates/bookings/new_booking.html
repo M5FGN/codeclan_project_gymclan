@@ -6,28 +6,28 @@
 <h1>Add a New Booking</h1>
 
 <hr>
-<form action="/bookings/confirm", method='POST'>
-    <div>
-        <label for="member_id">Memeber</label>
-        <select name="member_id" id="member">
-            {% for member in members %}
-            <option value="{{member.id}}">
-                {{member.first_name}} {{member.last_name}}
-                {% endfor %}
-            </option>
-        </select>
-  
-        <label for="gymsession_id">Session</label>
-        <select name="gymsession_id" id="gymsession">
-            {% for gymsession in gymsessions %}
-            <option value="{{gymsession.id}}">
-                {{gymsession.gs_title}} - {{gymsession.gs_date}} {{gymsession.gs_time}}
-                {% endfor %}
-            </option>
-        </select>
-    </div>
+<form action="/bookings/confirm" , method='POST'>
+
+    <label for="member_id">Memeber</label>
+    <select name="member_id" id="member">
+        {% for member in members %}
+        <option value="{{member.id}}">
+            {{member.first_name}} {{member.last_name}}
+            {% endfor %}
+        </option>
+    </select>
+
+    <label for="gymsession_id">Session</label>
+    <select name="gymsession_id" id="gymsession">
+        {% for gymsession in gymsessions %}
+        <option value="{{gymsession.id}}">
+            {{gymsession.gs_title}} - {{gymsession.gs_date}} {{gymsession.gs_time}}
+            {% endfor %}
+        </option>
+    </select>
+
     <p></p>
-    <input class='submit' type="submit" value="Save">
+    <input class='submit_nomargin' type="submit" value="Save">
 </form>
 <hr>
 

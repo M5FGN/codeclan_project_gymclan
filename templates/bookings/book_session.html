@@ -1,13 +1,15 @@
+<!-- Not currently in use -->
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/members/{{member.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/members/{{member.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 
 <h1><i class="far fa-calendar-alt page_title"></i>Book a Session</h1>
 
 <section>
     <hr>
-    <table class = 'results'>
+    <table class='results'>
         <tr>
             <th>Book</th>
             <th>Session Title</th>
@@ -18,13 +20,19 @@
         </tr>
         {% for gymsession in gymsessions %}
         <tr>
-            <td><a href="/bookings/{{member.id}}/{{gymsession.id}}/to_confirm"><i class="far fa-calendar-plus red"></i></a></td><td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_date}}</td><td>{{gymsession.gs_time}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_location}}</td>
+            <td><a href="/bookings/{{member.id}}/{{gymsession.id}}/to_confirm"><i
+                        class="far fa-calendar-plus red"></i></a></td>
+            <td>{{gymsession.gs_title}}</td>
+            <td>{{gymsession.gs_date}}</td>
+            <td>{{gymsession.gs_time}}</td>
+            <td>{{gymsession.duration}}</td>
+            <td>{{gymsession.gs_location}}</td>
         </tr>
         {% endfor %}
-        
+
     </table>
     <hr>
 </section>
 
-    
+
 {% endblock content %}

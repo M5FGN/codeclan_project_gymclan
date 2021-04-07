@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/gymsessions"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/gymsessions"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 
 <h1>Add New Session</h1>
 <hr>
@@ -12,24 +13,24 @@
     <input type="text" id='gs_description' name='gs_description' required>
     <p>Session Type:</p>
     <span class='radio'>
-    <label for="cardio">Cardio</label>
-    <input type="radio" name="gs_type" id="cardio" value='Cardio' checked='checked'>
-    <label for="strength">Strength</label>
-    <input type="radio" name="gs_type" id="strength" value='Strength'>
-    <label for="flexibility">Flexibility</label>
-    <input type="radio" name="gs_type" id="flexibility" value='Flexibility'></span>
+        <label for="cardio">Cardio</label>
+        <input type="radio" name="gs_type" id="cardio" value='Cardio' checked='checked'>
+        <label for="strength">Strength</label>
+        <input type="radio" name="gs_type" id="strength" value='Strength'>
+        <label for="flexibility">Flexibility</label>
+        <input type="radio" name="gs_type" id="flexibility" value='Flexibility'></span>
 
     <!-- <label for="gs_type">Type:</label>
     <input type="text" id='gs_type' name='gs_type' required> -->
 
     <p>Ability Level:</p>
     <span class='radio'>
-    <label for="beginners">Beginners</label>
-    <input type="radio" name="ability_level" id="beginners" value='Beginners' checked='checked'>
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="ability_level" id="moderate" value='Moderate'>
-    <label for="advanced">Advanced</label>
-    <input type="radio" name="ability_level" id="advanced" value='Advanced'></span>
+        <label for="beginners">Beginners</label>
+        <input type="radio" name="ability_level" id="beginners" value='Beginners' checked='checked'>
+        <label for="moderate">Moderate</label>
+        <input type="radio" name="ability_level" id="moderate" value='Moderate'>
+        <label for="advanced">Advanced</label>
+        <input type="radio" name="ability_level" id="advanced" value='Advanced'></span>
     <!-- <label for="ability_level">Ability Level:</label>
     <input type="text" id='ability_level' name='ability_level' required> -->
     <label for="gs_day">Day:</label>
@@ -42,13 +43,13 @@
     <input type="text" id='duration' name='duration' required>
     <p>Plan:</p>
     <span class='radio'><label for="Standard">Standard</label>
-    <input type="radio" name="gs_plan" id="Standard" value='Standard' checked='checked'>
-    <label for="Premium">Premium</label>
-    <input type="radio" name="gs_plan" id="Premium" value='Premium'></span>
+        <input type="radio" name="gs_plan" id="Standard" value='Standard' checked='checked'>
+        <label for="Premium">Premium</label>
+        <input type="radio" name="gs_plan" id="Premium" value='Premium'></span>
     <!-- <label for="gs_plan">Plan:</label>
     <input type="text" id='gs_plan' name='gs_plan' value='Peak'> -->
     <label for="gs_location">Location:</label>
-    <input type="text" id='gs_location' name='gs_location'required>
+    <input type="text" id='gs_location' name='gs_location' required>
     <label for="cost">Cost:</label>
     <input type="text" id='cost' name='cost' required>
     <label for="capacity">Capacity:</label>

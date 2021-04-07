@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a class='basic_link' href="/gymsessions/{{gymsession.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span class='basic_link_text'>Back</span></i></a>
+<a class='basic_link' href="/gymsessions/{{gymsession.id}}"><i class="fas fa-angle-double-right fa-rotate-180"></i><span
+        class='basic_link_text'>Back</span></i></a>
 <h1>Edit Session - {{gymsession.gs_title}}</h1>
 <hr>
 <form action="/gymsessions/{{gymsession.id}}/edit_save" method="post">
@@ -11,26 +12,26 @@
     <input type="text" id='gs_description' name='gs_description' value='{{gymsession.gs_description}}'>
     <p>Session Type:</p>
     <span>
-    <label for="cardio">Cardio</label>
-    <input type="radio" name="gs_type" id="cardio" value='Cardio'
-    {% if gymsession.gs_type == 'Cardio' %} checked='checked' {% endif %}>
-    <label for="strength">Strength</label>
-    <input type="radio" name="gs_type" id="strength" value='Strength'
-    {% if gymsession.gs_type == 'Strength' %} checked='checked' {% endif %}>
-    <label for="flexibility">Flexibility</label>
-    <input type="radio" name="gs_type" id="flexibility" value='Flexibility'
-    {% if gymsession.gs_type == 'Flexibility' %} checked='checked' {% endif %}></span>
+        <label for="cardio">Cardio</label>
+        <input type="radio" name="gs_type" id="cardio" value='Cardio' {% if gymsession.gs_type == 'Cardio' %}
+            checked='checked' {% endif %}>
+        <label for="strength">Strength</label>
+        <input type="radio" name="gs_type" id="strength" value='Strength' {% if gymsession.gs_type == 'Strength' %}
+            checked='checked' {% endif %}>
+        <label for="flexibility">Flexibility</label>
+        <input type="radio" name="gs_type" id="flexibility" value='Flexibility'
+            {% if gymsession.gs_type == 'Flexibility' %} checked='checked' {% endif %}></span>
     <p>Ability Level:</p>
     <span>
-    <label for="beginners">Beginner</label>
-    <input type="radio" name="ability_level" id="beginner" value='Beginner'
-    {% if gymsession.ability_level == 'Beginner' %} checked='checked' {% endif %}>
-    <label for="moderate">Moderate</label>
-    <input type="radio" name="ability_level" id="moderate" value='Moderate'
-    {% if gymsession.ability_level == 'Moderate' %} checked='checked' {% endif %}>
-    <label for="advanced">Advanced</label>
-    <input type="radio" name="ability_level" id="advanced" value='Advanced'
-    {% if gymsession.ability_level == 'Advanced' %} checked='checked' {% endif %}></span>
+        <label for="beginners">Beginner</label>
+        <input type="radio" name="ability_level" id="beginner" value='Beginner'
+            {% if gymsession.ability_level == 'Beginner' %} checked='checked' {% endif %}>
+        <label for="moderate">Moderate</label>
+        <input type="radio" name="ability_level" id="moderate" value='Moderate'
+            {% if gymsession.ability_level == 'Moderate' %} checked='checked' {% endif %}>
+        <label for="advanced">Advanced</label>
+        <input type="radio" name="ability_level" id="advanced" value='Advanced'
+            {% if gymsession.ability_level == 'Advanced' %} checked='checked' {% endif %}></span>
     <label for="gs_day">Day:</label>
     <input type="text" id='gs_day' name='gs_day' value='{{gymsession.gs_day}}'>
     <label for="gs_date">Date:</label>
@@ -41,11 +42,11 @@
     <input type="text" id='duration' name='duration' value='{{gymsession.duration}}''>
     <p>Plan:</p><span>
         <label for="Standard">Standard</label>
-    <input type="radio" name="gs_plan" id="Standard" value='Standard'
-    {% if gymsession.gs_plan == 'Standard' %} checked='checked' {% endif %}>
+    <input type="radio" name="gs_plan" id="Standard" value=' Standard' {% if gymsession.gs_plan == 'Standard' %}
+        checked='checked' {% endif %}>
     <label for="Premium">Premium</label>
-    <input type="radio" name="gs_plan" id="Premium" value='Premium'
-    {% if gymsession.gs_plan == 'Premium' %} checked='checked' {% endif %}></span>
+    <input type="radio" name="gs_plan" id="Premium" value='Premium' {% if gymsession.gs_plan == 'Premium' %}
+        checked='checked' {% endif %}></span>
 
     <label for="gs_location">Location:</label>
     <input type="text" id='gs_location' name='gs_location' value='{{gymsession.gs_location}}'>
@@ -58,5 +59,5 @@
     <label for=""></label><input class='submit' type="submit" value="Save">
 </form>
 
-    
+
 {% endblock  %}

@@ -60,7 +60,7 @@ def delete_gymsession_save(id):
 @gymsessions_blueprint.route('/gymsessions/<id>/edit', methods=['GET'])
 def edit(id):
     gymsession = gymsession_repository.view(id)
-    return render_template('gymsessions/edit.html', title='Edit gymsession', gymsession=gymsession)
+    return render_template('gymsessions/edit.html', title='Edit Gymsession', gymsession=gymsession)
 
 @gymsessions_blueprint.route('/gymsessions/<id>/edit_save', methods=['POST'])
 def edit_save(id):
@@ -86,5 +86,5 @@ def edit_save(id):
 def check_bookings(id):
     gymsession = gymsession_repository.view(id)
     bookings = gymsession_repository.bookings(gymsession)
-    return render_template ('gymsessions/participants.html', Title='Participants', gymsession=gymsession, bookings=bookings)
+    return render_template ('gymsessions/participants.html', title='Participants', gymsession=gymsession, bookings=bookings)
 

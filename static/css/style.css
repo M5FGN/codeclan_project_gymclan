@@ -28,7 +28,8 @@ p {
 
 .button,
 .submit,
-.cancel {
+.cancel,
+.submit_nomargin {
     display: inline-block;
     border: 2px solid #D72F78;
     border-radius: 5px;
@@ -59,8 +60,6 @@ p {
     color: white;
 }
 
-
-
 .basic_link {
     font-family: 'Antic Slab', serif;
     font-size: 20px;
@@ -71,8 +70,6 @@ p {
 .basic_link_text {
     padding-left: 10px;
 }
-
-
 
 .fa-dumbbell {
     font-size: 70px;
@@ -262,4 +259,9 @@ footer>p {
 
 .cancel {
     margin-top: 0px;
+}
+
+form > select {
+    margin: 10px;
+    padding: 4px;
 }

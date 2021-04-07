@@ -6,7 +6,7 @@
 
 <section>
     <hr>
-    <table class = 'results'>
+    <table class='results'>
         <tr>
             <th>See More</th>
             <th>Session ID</th>
@@ -18,20 +18,26 @@
         </tr>
         {% for gymsession in gymsessions %}
         <tr>
-            <td><a href="/gymsessions/{{gymsession.id}}"><i class="fas fa-angle-double-right red"></i></a></td><td>{{gymsession.id}}</td><td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_type}}</td><td>{{gymsession.ability_level}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_plan}}</td>
+            <td><a href="/gymsessions/{{gymsession.id}}"><i class="fas fa-angle-double-right red"></i></a></td>
+            <td>{{gymsession.id}}</td>
+            <td>{{gymsession.gs_title}}</td>
+            <td>{{gymsession.gs_type}}</td>
+            <td>{{gymsession.ability_level}}</td>
+            <td>{{gymsession.duration}}</td>
+            <td>{{gymsession.gs_plan}}</td>
         </tr>
         {% endfor %}
-        
+
     </table>
     <hr>
 </section>
 
 <nav>
     <ul>
-        <li><a class = 'button' href="/gymsessions/add"><i class="far fa-calendar-plus"></i>Add a Session</a></li>
-        <li><a class = 'button' href='/bookings/new_booking'><i class="far fa-calendar-plus"></i>Add a Booking</a></li>
+        <li><a class='button' href="/gymsessions/add"><i class="far fa-calendar-plus"></i>Add a Session</a></li>
+        <li><a class='button' href='/bookings/new_booking'><i class="far fa-calendar-plus"></i>Add a Booking</a></li>
     </ul>
 </nav>
 
-    
+
 {% endblock content %}
