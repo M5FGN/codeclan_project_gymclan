@@ -2,13 +2,12 @@
 
 {% block content %}
 
-<h1>Confirm Booking - {{gymsession.gs_title}} - {{gymsession.gs_date}} at {{gymsession.gs_time}}</h1>
+<h2>The booking has now been made...</h2>
 
-<p>{{member.first_name}} {{member.last_name}} is being added to the above session.</p>
 <nav>
     <ul>
-        <li><a class='button' href=""><i class="far fa-calendar-plus"></i>Save Booking</a></li>
-        <li><a class='button' href="/members/{{member.id}}/book"><i class="fas fa-ban"></i></i>Cancel</a></li>
+        <li><a class='button' href="/members"><i class="far fa-calendar-alt"></i>Return to Memebers</a></li>
+        <li><a class='button' href="/gymsessions"><i class="fas fa-users"></i>Return to Sessions</a></li>
     </ul>
 </nav>
 

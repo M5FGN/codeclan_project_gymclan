@@ -27,7 +27,8 @@ p {
 }
 
 .button,
-.submit {
+.submit,
+.cancel {
     display: inline-block;
     border: 2px solid #D72F78;
     border-radius: 5px;
@@ -257,4 +258,8 @@ footer>p {
     font-family: 'Antic Slab', serif;
     font-size: 18px;  
     color: #D72F78;
+}
+
+.cancel {
+    margin-top: 0px;
 }

@@ -45,13 +45,29 @@ def confirm_deletion():
 
 # Add Booking
 
-@bookings_blueprint.route('/bookings/<id>/add_session')
-def book_session(id):
-    member = member_repository.view(id)
-    gymsessions = gymsession_repository.view_all()
-    return render_template('bookings/book_session.html', title='Choose Session', member=member, gymsessions=gymsessions)
+# @bookings_blueprint.route('/bookings/<id>/add_session')
+# def book_session(id):
+#     member = member_repository.view(id)
+#     gymsessions = gymsession_repository.view_all()
+#     return render_template('bookings/book_session.html', title='Choose Session', member=member, gymsessions=gymsessions)
 
-@bookings_blueprint.route('/bookings/<member_id>/<gymsession_id>/to_confirm')
-def choose_session(member, gymsession):
-    booking = booking_repository.confirm_booking(member.id, gymsession.id)
-    return render_template('bookings/confirm_booking.html', title='Confirm Booking', member=member, gymsession=gymsession)
+# @bookings_blueprint.route('/bookings/<member_id>/<gymsession_id>/to_confirm')
+# def choose_session(member, gymsession):
+#     booking = booking_repository.confirm_booking(member.id, gymsession.id)
+#     return render_template('bookings/confirm_booking.html', title='Confirm Booking', member=member, gymsession=gymsession)
+
+@bookings_blueprint.route('/bookings/new_booking')
+def add_booking():
+    members = member_repository.view_all()
+    gymsessions = gymsession_repository.view_all()
+    return render_template('bookings/new_booking.html', title='Add a Booking', members=members, gymsessions=gymsessions)
+
+@bookings_blueprint.route('/bookings/confirm', methods=['POST'])
+def confirm_booking():
+    member_id = request.form['member_id']
+    gymsession_id = request.form['gymsession_id']
+    member = member_repository.view(member_id)
+    gymsession = gymsession_repository.view(gymsession_id)
+    new_booking = Booking(member, gymsession)
+    booking_repository.add_new(new_booking)
+    return render_template('bookings/confirm_booking.html')

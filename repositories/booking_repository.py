@@ -75,3 +75,13 @@ def delete(id):
     sql = 'DELETE FROM bookings WHERE id = %s'
     values = [id]
     run_sql(sql, values)
+
+
+# New Save - Not touching the one above as its working - probably not correctly though.
+
+def add_new(booking):
+    sql = 'INSERT INTO bookings (member_id, gymsession_id) VALUES (%s, %s) RETURNING id'
+    values = [booking.member.id, booking.gymsession.id]
+    results = run_sql(sql, values)
+    booking.id = results[0]['id']
+    booking.id = id
