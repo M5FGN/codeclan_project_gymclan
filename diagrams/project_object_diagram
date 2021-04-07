@@ -1,1 +1,28 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T20:18:28.217Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.5.6" etag="INEMuTw9Bpa-xDhgXZVD" type="github"><diagram id="igKi1967siW70KOv4yBO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-07T20:30:51.098Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="mzQKqrbBfUQ_DEH1L3Sa" version="14.5.6" type="github">
+  <diagram id="igKi1967siW70KOv4yBO" name="Page-1">
+    <mxGraphModel dx="1019" dy="519" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.163;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IvOPjKYJr2QwmOblXJR6-2" target="IvOPjKYJr2QwmOblXJR6-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-2" value="MEMBER" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="153" width="220" height="107" as="geometry" />
+        </mxCell>
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-3" value="+ id: 1&amp;nbsp;&lt;br&gt;+ first_name: Diana&lt;br&gt;+ last_name: Prince&lt;br&gt;+ member_type: Premium&lt;br&gt;+ member_status: Active" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="IvOPjKYJr2QwmOblXJR6-2">
+          <mxGeometry x="39" y="31" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-7" value="GYMSESSION" style="swimlane;fillColor=#f8cecc;strokeColor=#b85450;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="400" y="153" width="260" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-8" value="+ id: 1&lt;br&gt;+gs_title: Les Mills: Body Pump&lt;br&gt;+gs_description:&amp;nbsp; A full body weights workout.&lt;br&gt;+ability_level: Moderate&amp;nbsp;&lt;br&gt;+gs_type: Strength&lt;br&gt;+gs_day: Monday&lt;br&gt;+gs_date: 5/4/21&lt;br&gt;+gs_time: 13.00&lt;br&gt;+duration: 45&amp;nbsp;&lt;br&gt;+gs_plan: Standard&lt;br&gt;+gs_location: Gym1&lt;br&gt;+cost: 4.50&lt;br&gt;+capacity: 10&lt;br&gt;+instructor: Lonnie Machin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="IvOPjKYJr2QwmOblXJR6-7">
+          <mxGeometry x="-1" y="23" width="260" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="IvOPjKYJr2QwmOblXJR6-12" value="Books" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="180" width="40" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
