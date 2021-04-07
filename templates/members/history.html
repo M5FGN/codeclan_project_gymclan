@@ -9,7 +9,7 @@
     <hr>
     <table class = 'results'>
         <tr>
-            <th>Cancel</th>
+            <!-- <th>Cancel</th> -->
             <th>Session Title</th>
             <th>Date</th>
             <th>Time</th>
@@ -18,7 +18,9 @@
         </tr>
         {% for gymsession in gymsessions %}
         <tr>
-            <td><a href=""><i class="far fa-trash-alt red"></i></a></td><td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_date}}</td><td>{{gymsession.gs_time}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_location}}</td>
+            <!-- FIXME - This works but is wrong - see deleting participants for right way to do this. -->
+            <!-- <td><a href=""><i class="far fa-trash-alt red"></i></a></td> -->
+            <td>{{gymsession.gs_title}}</td><td>{{gymsession.gs_date}}</td><td>{{gymsession.gs_time}}</td><td>{{gymsession.duration}}</td><td>{{gymsession.gs_location}}</td>
         </tr>
         {% endfor %}
         
