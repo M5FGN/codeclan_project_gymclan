@@ -71,7 +71,7 @@ def confirm_booking(member_id, gymsession_id):
 
 
 # Delete Participant
-def delete_participant(id):
+def delete(id):
     sql = 'DELETE FROM bookings WHERE id = %s'
     values = [id]
     run_sql(sql, values)

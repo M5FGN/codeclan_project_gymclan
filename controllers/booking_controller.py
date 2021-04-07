@@ -33,6 +33,16 @@ def delete_participant(booking):
     return render_template('bookings/delete_participant.html', Title="Delete Participant")
 
 
+@bookings_blueprint.route('/bookings/<id>/delete', methods=['POST'])
+def delete_booking(id):
+    # booking = booking_repository.view(id)
+    booking_repository.delete(id)
+    return redirect ('/bookings/delete/confirmation')
+
+@bookings_blueprint.route('/bookings/delete/confirmation')
+def confirm_deletion():
+    return render_template('/bookings/confirm_delete.html')
+
 # Add Booking
 
 @bookings_blueprint.route('/bookings/<id>/add_session')

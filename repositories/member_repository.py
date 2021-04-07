@@ -60,7 +60,7 @@ def history(member):
         gymsessions.append(gymsession)
     return gymsessions
 
-def filter (filter_member_status):
+def filter (member, filter_member_status):
     members = []
     sql = 'SELECT * FROM members WHERE member_status = %s'
     values = [filter_member_status]
