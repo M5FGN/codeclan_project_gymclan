@@ -1,68 +1,69 @@
-<mxfile host="app.diagrams.net" modified="2021-04-07T20:50:55.329Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="HA4R_Fsx2Ta7OZcvzGSt" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-17T18:06:46.136Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="buyB7Z8cLWRZyMilMC1b" version="14.7.2" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1019" dy="519" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-19" value="Member Books a Gym Session" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;" parent="1" vertex="1">
-          <mxGeometry x="160" y="150" width="600" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-20" value="Member" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
-          <mxGeometry x="20" width="580" height="180" as="geometry" />
-        </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-20" source="dNxyNK7c78bLwvsdeMH5-23" target="dNxyNK7c78bLwvsdeMH5-24" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-23" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
-          <mxGeometry x="40" y="50" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-24" value="Asks at Gym Staff to book Gym Session" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
-          <mxGeometry x="120" y="30" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-20" source="rbQHj74agArNH0YYGtEi-12" target="dNxyNK7c78bLwvsdeMH5-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-12" value="Member Picks New Gym Session" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
-          <mxGeometry x="301" y="30" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Gym Staff" style="swimlane;html=1;startSize=20;horizontal=0;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
-          <mxGeometry x="20" y="180" width="580" height="180" as="geometry">
-            <mxRectangle x="20" y="120" width="430" height="20" as="alternateBounds" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-1" value="Member Books a Gym Session" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="65" y="344" width="708" height="703" as="geometry">
+            <mxRectangle x="65" y="340" width="203" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-21" source="dNxyNK7c78bLwvsdeMH5-28" target="rbQHj74agArNH0YYGtEi-15">
+        <mxCell id="hyUuhLdjXvswvjg22m1D-2" value="Member" style="swimlane;startSize=23;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-1">
+          <mxGeometry y="22" width="354" height="682" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-2" source="hyUuhLdjXvswvjg22m1D-5" target="hyUuhLdjXvswvjg22m1D-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-28" value="" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
-          <mxGeometry x="340" y="30" width="40" height="40" as="geometry" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-5" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-2">
+          <mxGeometry x="162" y="42" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-21" source="rbQHj74agArNH0YYGtEi-5" target="dNxyNK7c78bLwvsdeMH5-28">
+        <mxCell id="hyUuhLdjXvswvjg22m1D-6" value="Member asks Gym staff to book session." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-2">
+          <mxGeometry x="98" y="115" width="158" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-24" value="Member picks new gym session to book." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-2">
+          <mxGeometry x="104" y="276" width="158" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-3" value="GymClan App" style="swimlane;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-1">
+          <mxGeometry x="354" y="22" width="354" height="682" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-4" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="162" y="582" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-3" source="hyUuhLdjXvswvjg22m1D-7" target="hyUuhLdjXvswvjg22m1D-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-5" value="Gym Checks for Capacity" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
-          <mxGeometry x="120" y="20" width="130" height="60" as="geometry" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-7" value="Gym checks for capacity on session." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="98" y="115" width="158" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-21" source="rbQHj74agArNH0YYGtEi-15" target="dNxyNK7c78bLwvsdeMH5-32">
+        <mxCell id="hyUuhLdjXvswvjg22m1D-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-3" source="hyUuhLdjXvswvjg22m1D-8" target="hyUuhLdjXvswvjg22m1D-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-15" value="Booking Made" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=#000000;align=center;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
-          <mxGeometry x="295" y="110" width="130" height="60" as="geometry" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-8" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="137" y="267" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-17" value="OK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
-          <mxGeometry x="360" y="70" width="40" height="20" as="geometry" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-9" value="Else" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="89" y="236" width="60" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-13" value="Else" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
-          <mxGeometry x="360" width="40" height="20" as="geometry" />
+        <mxCell id="hyUuhLdjXvswvjg22m1D-10" value="OK" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="89" y="332" width="60" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="dNxyNK7c78bLwvsdeMH5-32" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
-          <mxGeometry x="510" y="130" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-24" target="rbQHj74agArNH0YYGtEi-5">
+        <mxCell id="hyUuhLdjXvswvjg22m1D-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-3" source="hyUuhLdjXvswvjg22m1D-17" target="hyUuhLdjXvswvjg22m1D-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rbQHj74agArNH0YYGtEi-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.447;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-28" target="rbQHj74agArNH0YYGtEi-12">
+        <mxCell id="hyUuhLdjXvswvjg22m1D-17" value="Booking Made" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="hyUuhLdjXvswvjg22m1D-3">
+          <mxGeometry x="98" y="437" width="158" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-1" source="hyUuhLdjXvswvjg22m1D-6" target="hyUuhLdjXvswvjg22m1D-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="hyUuhLdjXvswvjg22m1D-1" source="hyUuhLdjXvswvjg22m1D-8" target="hyUuhLdjXvswvjg22m1D-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyUuhLdjXvswvjg22m1D-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="130" as="targetPoint" />
+            <mxPoint x="248" y="543" as="targetPoint" />
+            <mxPoint x="248" y="640" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>
